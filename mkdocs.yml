@@ -1,0 +1,41 @@
+site_name: IA-UE09-Techniques Web
+copyright: Copyright &copy; 2025, G.Baltus, basé sur les notes originales de F.Leclercq. Tous droits réservés.
+
+
+
+nav:
+  - Acceuil: index.md
+  - EU09: 00_UE09/index.md
+  - Histoire du web: 01_HistoireWeb/index.md
+theme: 
+  name : material
+
+  palette:
+  # Palette toggle for light mode
+    - scheme: default
+      primary: blue grey
+      accent: blue grey
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary : blue grey
+      accent : blue grey
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  logo: img/HELMo_logo.png
+  favicon: img/helmoDots.png
+
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - toc.integrate
+
+  language: fr
+
