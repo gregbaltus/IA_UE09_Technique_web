@@ -6,7 +6,17 @@ copyright: Copyright &copy; 2025, G.Baltus, basé sur les notes originales de F.
 nav:
   - Acceuil: index.md
   - EU09: 00_UE09/index.md
-  - Histoire du web: 01_HistoireWeb/index.md
+  - Historique du web: 
+    - Bref historique: 01_HistoireWeb/index.md
+    - L'internet: 01_HistoireWeb/internet.md
+    - Le Web: 01_HistoireWeb/web.md
+    - Les Risques: 01_HistoireWeb/Risque.md
+  - Les base de l'HTML : 
+    - Les langages du Web: 02_htmlBase/index.md
+    - Les bases de l'HTML : 02_htmlBase/baseHtml.md
+    - La structure global : 02_htmlBase/structure.md
+    - Les codages : 02_htmlBase/codage.md
+    - Les naviguateurs: 02_htmlBase/navigateur.md
 theme: 
   name : material
 
@@ -36,6 +46,43 @@ theme:
     - navigation.tabs.sticky
     - navigation.sections
     - toc.integrate
+    - header.autohide
+
 
   language: fr
 
+extra_css:
+  - "css/extra.css"
+
+# Extensions
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.mark
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.progressbar
+  - pymdownx.snippets
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.b64
+  - pymdownx.smartsymbols
+  - pymdownx.tilde
+  - attr_list
+  - admonition
+  - pymdownx.betterem
+  - md_in_html
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+plugins:
+  - search
