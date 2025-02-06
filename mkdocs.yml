@@ -16,21 +16,21 @@ nav:
     - La structure global : 02_htmlBase/structure.md
     - Les codages : 02_htmlBase/codage.md
     - Les naviguateurs: 02_htmlBase/navigateur.md
-  - Balise :
-    - Découverte : 03_htmlBalise/index.md
-    - Balises : 03_htmlBalise/balises.md
-    - Exercices : 03_htmlBalise/exercice.md
-  - Sémantique :
-    - Évolution de l'HTML: 04_htmlSemantique/index.md
-    - Web sémantique : 04_htmlSemantique/html.md
-    - Balise sémantique : 04_htmlSemantique/baliseSemantique.md
-    - Bonnes pratiques : 04_htmlSemantique/bonnePratique.md
-    - Respect des standards : 04_htmlSemantique/validation.md
-    - Exercices : 04_htmlSemantique/exercice.md
-  - Formulaire :
-    - Introduction : 05_htmlFormulaire/index.md
-    - Balises : 05_htmlFormulaire/balise.md
-    - Exercices : 05_htmlFormulaire/exercice.md
+  # - Balise :
+  #   - Découverte : 03_htmlBalise/index.md
+  #   - Balises : 03_htmlBalise/balises.md
+  #   - Exercices : 03_htmlBalise/exercice.md
+  # - Sémantique :
+  #   - Évolution de l'HTML: 04_htmlSemantique/index.md
+  #   - Web sémantique : 04_htmlSemantique/html.md
+  #   - Balise sémantique : 04_htmlSemantique/baliseSemantique.md
+  #   - Bonnes pratiques : 04_htmlSemantique/bonnePratique.md
+  #   - Respect des standards : 04_htmlSemantique/validation.md
+  #   - Exercices : 04_htmlSemantique/exercice.md
+  # - Formulaire :
+  #   - Introduction : 05_htmlFormulaire/index.md
+  #   - Balises : 05_htmlFormulaire/balise.md
+  #   - Exercices : 05_htmlFormulaire/exercice.md
     
 theme: 
   name : material

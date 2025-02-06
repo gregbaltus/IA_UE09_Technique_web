@@ -10,8 +10,8 @@
 
 [Base de l'HTML](02_htmlBase/index.md)
  
-[Balise](03_htmlBalise/index.md)
+<!--[Balise](03_htmlBalise/index.md) -->
 
-[Sématique](04_htmlSemantique/index.md)
+<!-- [Sématique](04_htmlSemantique/index.md) -->
 
-[Formulaire](05_htmlFormulaire/index.md)
+<!-- [Formulaire](05_htmlFormulaire/index.md) -->
