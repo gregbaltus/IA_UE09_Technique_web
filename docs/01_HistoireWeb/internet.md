@@ -4,12 +4,12 @@
 
 **Internet** est un réseau mondial d'ordinateurs interconnectés permettant l’échange de données et la communication entre des millions de dispositifs. Il fonctionne grâce à des protocoles standardisés, comme TCP/IP, et supporte divers services tels que le Web, les emails, la messagerie instantanée et bien plus encore.
 
-<img src="../img/01_HistoireWeb/inter_connectedd_network.png" alt="Resaux connecté" width="900">
+<img src="docs/img/01_HistoireWeb/inter_connectedd_network.png" alt="Resaux connecté" width="900">
 
 Si internet est un réseau, il faut d'abord comprendre ce qu'est un réseau. **Un réseau** est un ensemble d'appareils connectés entre eux pour échanger des données, partager des ressources (comme des imprimantes ou des serveurs) et communiquer via des protocoles de communication.
 
 
-<img src="../img/01_HistoireWeb/Exemple-reseau.png" alt="Exemple réseau interne" width="900">
+<img src="docs/img/01_HistoireWeb/Exemple-reseau.png" alt="Exemple réseau interne" width="900">
 
 Utilisé de tel réseau permet de nombreux avantage :
 
@@ -48,7 +48,7 @@ La couche Transport assure la fiabilité des communications entre l’expéditeu
 Cette couche fournit des services directs aux utilisateurs et définit les protocoles pour des applications spécifiques (comme HTTP pour le web, SMTP pour les emails, ou FTP pour le transfert de fichiers).
 Exemple : Lorsqu'un utilisateur entre une URL, le protocole HTTP est activé pour demander la page web.
  
-<img src="../img/01_HistoireWeb/modele-tcp-ip.png" alt="modele TCP/IP" width="800">
+<img src="docs/img/01_HistoireWeb/modele-tcp-ip.png" alt="modele TCP/IP" width="800">
 
 ### Couche Accès Réseau
 Cette couche gère les protocoles de communication avec le matériel réseau, comme Ethernet ou Wi-Fi. 
@@ -60,13 +60,13 @@ C'est ce protocole IP qui gère le transport de paquets de données (datagrammes
 Chaque machine possède une « adresse IP » qui permet de la localiser sur le réseau. Les datagrammes sont acheminés à destination (adresse IP) grâce à des routeurs qui
 décident du chemin à emprunter jusqu’au routeur suivant… et ainsi de suite jusqu’à la destination.
 
-<img src="../img/01_HistoireWeb/Transport_IP.png" alt="transport IP" width="900">
+<img src="docs/img/01_HistoireWeb/Transport_IP.png" alt="transport IP" width="900">
 
 C'est également dans cette couche que l'on va retrouver les **routeurs** (router) et les **commutateur** (switch). 
 Un commutateur est un objet qui va peremttre de connecter différents appareils au sein d'un même réseau local (LAN). 
 Alors qu'un routeur connecte plusieurs réseaux différents (par exemple votre réseau local à Internet).
 
-<img src="../img/01_HistoireWeb/Routeur_Commutateur.png" alt="switch router" width="900">
+<img src="docs/img/01_HistoireWeb/Routeur_Commutateur.png" alt="switch router" width="900">
 
 
 Chaque périphérique possèdent donc une adresse qui l'identifie au réseaux, il y existe deux type d'adresse :
@@ -83,7 +83,7 @@ Il permet de définir quelle partie de l'adresse IP représente le réseau et qu
 
 Par exemple avec l'adresse IP suivante : 91.198.174.2 et le masque de sous-réseau : 255.255.224.0.
 
-<img src="../img/01_HistoireWeb/IP_masque_sous_reseau.png" alt="masque sous réseau" width="900">
+<img src="docs/img/01_HistoireWeb/IP_masque_sous_reseau.png" alt="masque sous réseau" width="900">
 
 On voit que l'adresse du sous-réseau est 91.198.160.0 et que sur ce sous-réseau l'appareil à son adresse local étant 0.0.14.2.
 L'utilisation d'un masque permet d'optimiser la bande passante en limitant les broadcast.
@@ -141,7 +141,7 @@ Elle permet d'identifier de manière unique un fichier, une page ou un service e
 
 Une URL se structure en plusieurs parties :
 
-<img src="../img/01_HistoireWeb/URL_composition.png" alt="URL" width="900">
+<img src="docs/img/01_HistoireWeb/URL_composition.png" alt="URL" width="900">
 
 Notons qu'un **domaine** permet de regrouper un ensemble de machines appartenant généralement à une même organisation (ex : helmo.be). 
 Le nom de domaine est composé de 2 parties : Top-level domain (TLD) : code du pays (.be, .fr,…) ou un code générique identifiant l’activité (.com,
@@ -150,7 +150,7 @@ Chaque nom de domaine va être associé à l’adresse IP permettant de localise
 
 L'URL peut être **aboslu** (c’est l ’adresse complète d’une ressource sur le web; elle est indépendante du contexte), ou **relatif** (c’est une adresse qui est dépendante du contexte (c-à-d de l’URL courante). Le protocole et le domaine ne sont pas spécifiés car déduits de l’URL courante.)
 
-<img src="../img/01_HistoireWeb/URL_absolu_relatif.png" alt="URL absolu et relatif" width="900">
+<img src="docs/img/01_HistoireWeb/URL_absolu_relatif.png" alt="URL absolu et relatif" width="900">
 
 
 **En résumé, internet c'est un réseau de réseaux exploitant le protocole TCP/IP**

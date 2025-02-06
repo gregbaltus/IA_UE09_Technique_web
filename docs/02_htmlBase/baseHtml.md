@@ -28,7 +28,7 @@ Il existe deux types  de balises :
 		<p>Je suis un paragraphe</p>
 		```
 		
-<img src="../../img/02_htmlBase/balise.png" alt="Balise" width="600">
+<img src="docs/img/02_htmlBase/balise.png" alt="Balise" width="600">
 		
 - les **balises autofermantes**
 	- Elles ne nécessitent pas de fermeture
@@ -52,7 +52,7 @@ Certains attributs sont **obligatoires**, d'autres **optionnels**.
 
 Les attributs sont placés dans la balise d'ouverture, sous la forme **`nom=valeur`**.  
 
-<img src="../../img/02_htmlBase/attribut.png" alt="Attribut" width="600">
+<img src="docs/img/02_htmlBase/attribut.png" alt="Attribut" width="600">
 
 
 

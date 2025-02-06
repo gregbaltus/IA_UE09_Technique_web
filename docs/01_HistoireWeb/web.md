@@ -36,6 +36,6 @@ Lorsqu'un utilisateur entre une URL dans son navigateur, ce dernier envoie une r
 HTTP fonctionne de manière sans état (stateless), c'est-à-dire que chaque requête est indépendante des autres et ne conserve aucune information sur les requêtes précédentes.
 Une version plus sécurisée de HTTP est HTTPS (Hypertext Transfer Protocol Secure), qui ajoute une couche de sécurité grâce au cryptage SSL/TLS pour protéger les données échangées entre le client et le serveur.
 
-<img src="../img/01_HistoireWeb/http_https.png" alt="http clien server" width="900">
+<img src="docs/img/01_HistoireWeb/http_https.png" alt="http clien server" width="900">
 
-<img src="../img/01_HistoireWeb/requete_http.png" alt="requete http" width="900">
+<img src="docs/img/01_HistoireWeb/requete_http.png" alt="requete http" width="900">

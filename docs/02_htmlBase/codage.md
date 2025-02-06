@@ -9,7 +9,7 @@ Dans les années 1960, l'ANSI (American National Standards Institute) a publié 
 
 Les 33 premiers caractères sont des caractères de contrôle. (Exemple: le caractère "barre d'espace" est représenté par la valeur 32 en décimal).
 
-![Table ASCII](../../img/02_htmlBase/table-ascii.png)
+![Table ASCII](docs/img/02_htmlBase/table-ascii.png)
 
 !!! Tip " Taper un caractère grâce au code ASCII "
 
@@ -33,7 +33,7 @@ Pour éviter des erreurs d'interprétation, le lecteur d'un texte doit utiliser 
 
 L'IANA (Internet Assigned Numbers Authority) a validé, pour une utilisation sur Internet, le codage ISO-8859-1 ou Latin1 permettant d'encoder les langues issues d'Europe occidentale.
 
-![Table ISO8859-1](../img/02_htmlBase/table-iso8859.png/)
+![Table ISO8859-1](docs/img/02_htmlBase/table-iso8859.png/)
 
 
 ### Le codage des caractères en Unicode
