@@ -1,0 +1,952 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../img/helmoDots.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Premières balises de contenu - IA-UE09-Techniques Web</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#premieres-balises-de-contenu" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../.." title="IA-UE09-Techniques Web" class="md-header__button md-logo" aria-label="IA-UE09-Techniques Web" data-md-component="logo">
+      
+  <img src="../../img/HELMo_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IA-UE09-Techniques Web
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Premières balises de contenu
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Acceuil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../00_UE09/" class="md-tabs__link">
+        
+  
+    
+  
+  EU09
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../01_HistoireWeb/" class="md-tabs__link">
+          
+  
+  Historique du web
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../02_htmlBase/" class="md-tabs__link">
+          
+  
+  Base de l'HTML
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="IA-UE09-Techniques Web" class="md-nav__button md-logo" aria-label="IA-UE09-Techniques Web" data-md-component="logo">
+      
+  <img src="../../img/HELMo_logo.png" alt="logo">
+
+    </a>
+    IA-UE09-Techniques Web
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Acceuil
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_UE09/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EU09
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Historique du web
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Historique du web
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_HistoireWeb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bref historique
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_HistoireWeb/internet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    L'internet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_HistoireWeb/web/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Le Web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_HistoireWeb/Risque/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les Risques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Base de l'HTML
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Base de l'HTML
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_htmlBase/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les langages du Web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_htmlBase/baseHtml/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les bases de l'HTML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_htmlBase/structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    La structure global
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_htmlBase/codage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les codages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_htmlBase/navigateur/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les naviguateurs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="premieres-balises-de-contenu">Premières balises de contenu</h1>
+<div class="admonition note">
+<p class="admonition-title">Avertissement</p>
+<p>Cette page vous montre les balises principales.  Il en existe bien plus... <br>  <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/" target="_blank">&gt;&gt;N'hésitez pas à consulter une doc de référence.</a>  Vous avez un aperçu des balises existantes dans le menu latéral de gauche.</p>
+</div>
+<details class="note">
+<summary>Comment choisir les balises ?</summary>
+<p>Les balises doivent identifier le contenu affiché. Est-ce un titre, un paragraphe, une citation, une liste, etc. ? Une fois que le contenu est identifié, recherchez la balise la plus adéquate pour le représenter.</p>
+<p>Exemple : </p>
+<p><pre>
+  &lt;p&gt;Activités&lt;/p&gt;
+  &lt;p&gt;Voici mes activités favorites :&lt;/p&gt;
+  &lt;p&gt;Sport&lt;/p&gt;
+  &lt;p&gt;Basket&lt;/p&gt;
+  &lt;p&gt;Natation&lt;/p&gt;
+  &lt;p&gt;Jeux&lt;/p&gt;
+  &lt;p&gt;Fortnite&lt;/p&gt;
+  &lt;p&gt;Doom&lt;/p&gt;
+ </pre>  <br />
+ <pre>  <br />
+    &lt;h1&gt;Activités&lt;/h1&gt;
+    &lt;p&gt;Voici mes activités favorites :&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Sport 
+        &lt;ol&gt;
+          &lt;li&gt;Basket&lt;/li&gt;
+          &lt;li&gt;Natation&lt;/li&gt;
+        &lt;ol&gt;
+      &lt;li&gt;
+      &lt;li&gt;Jeux 
+        &lt;ol&gt;
+          &lt;li&gt;Fortnite&lt;/li&gt;
+          &lt;li&gt;Doom&lt;/li&gt;
+        &lt;ol&gt;
+      &lt;li&gt;
+    &lt;ul&gt;
+  </pre>  <br />
+Pour vous aider, voici les questions à vous poser : </p>
+<ul>
+<li>
+<p><strong>Que représente le contenu ?</strong></p>
+<p>Il est important d'identifier la nature du contenu : est-ce un titre, un paragraphe, une citation, une liste, etc. ? Par exemple, un titre principal utilisera une balise <code>&lt;h1&gt;</code>, tandis qu'un paragraphe simple utilisera <code>&lt;p</code>&gt;.</p>
+</li>
+<li>
+<p><strong>Quelle est la hiérarchie de l'information ?</strong></p>
+<p>Les balises de titre (<code>&lt;h1&gt;</code> à <code>&lt;h6&gt;</code>) permettent de structurer l'information en niveaux, facilitant ainsi la lecture par les utilisateurs et les moteurs de recherche.</p>
+</li>
+<li>
+<p><strong>S'agit-il d'une information visuelle ou fonctionnelle ?</strong></p>
+<p>Certaines balises, comme <code>&lt;strong&gt;</code> et <code>&lt;em&gt;</code>, ajoutent de la signification au texte, tandis que d'autres, comme <code>&lt;div&gt;</code> ou <code>&lt;span&gt;</code>, sont purement structurelles et n'apportent aucune sémantique.</p>
+</li>
+<li>
+<p><strong>Le contenu doit-il être interactif ?</strong></p>
+<p>Si le contenu nécessite une interaction utilisateur (boutons, formulaires), des balises spécifiques comme <code>&lt;button&gt;</code>, <code>&lt;form&gt;</code>, ou <code>&lt;input&gt;</code> sont nécessaires pour assurer accessibilité et fonctionnalité.</p>
+</li>
+</ul>
+<p><strong>La sémantique est un élément très important.  Nous y reviendrons en datail dans le <a href="../../04_htmlSemantique/">chapitre suivant</a></strong></p>
+</details>
+<h2 id="titre">Titre <a name="titre"></a></h2>
+<p>Les éléments <code>&lt;h1&gt;&lt;h2&gt;...</code> représentent des titres.  Il y a 6 niveaux de titres.</p>
+<p><code>&lt;h1&gt;</code> correspond au niveau  le plus haut et <code>&lt;h6&gt;</code> correspond au niveau le plus faible.</p>
+<blockquote>
+<p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> Il ne peut y avoir qu'un seul titre principal dans une page, représenté par un <code>&lt;h1&gt;</code></p>
+<p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> La hiéarchie des titres doit être respectée.  Vous ne pouvez donc pas avoir de <code>&lt;h3&gt;</code> si vous n'avez pas de <code>&lt;h2&gt;</code>, vous ne pouvez pas avoir de <code>&lt;h2&gt;</code> si vous n'avez pas de <code>&lt;h1&gt;</code>, ...</p>
+</blockquote>
+<p>Ajoutez 6 niveaux de titre (<code>&lt;h1&gt;</code> jusque <code>&lt;h6&gt;</code>). Que constatez-vous visuellement ?</p>
+<details class="quote">
+<summary>Solution</summary>
+<p>Plus le niveau du titre est haut, plus la taille de la police est grande.  L'erreur courante lorsqu'on début est de choisir le niveau du titre en fonction de sa taille.  <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M368 128c0 44.4-25.4 83.5-64 106.4V256c0 17.7-14.3 32-32 32h-96c-17.7 0-32-14.3-32-32v-21.6c-38.6-23-64-62.1-64-106.4C80 57.3 144.5 0 224 0s144 57.3 144 128m-200 48a32 32 0 1 0 0-64 32 32 0 1 0 0 64m144-32a32 32 0 1 0-64 0 32 32 0 1 0 64 0M3.4 273.7c7.9-15.8 27.1-22.2 42.9-14.3L224 348.2l177.7-88.8c15.8-7.9 35-1.5 42.9 14.3s1.5 35-14.3 42.9L295.6 384l134.8 67.4c15.8 7.9 22.2 27.1 14.3 42.9s-27.1 22.2-42.9 14.3L224 419.8 46.3 508.6c-15.8 7.9-35 1.5-42.9-14.3s-1.5-35 14.3-42.9L152.4 384 17.7 316.6c-15.8-7.9-22.2-27.1-14.3-42.9"/></svg></span> Grande erreur ! <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M368 128c0 44.4-25.4 83.5-64 106.4V256c0 17.7-14.3 32-32 32h-96c-17.7 0-32-14.3-32-32v-21.6c-38.6-23-64-62.1-64-106.4C80 57.3 144.5 0 224 0s144 57.3 144 128m-200 48a32 32 0 1 0 0-64 32 32 0 1 0 0 64m144-32a32 32 0 1 0-64 0 32 32 0 1 0 64 0M3.4 273.7c7.9-15.8 27.1-22.2 42.9-14.3L224 348.2l177.7-88.8c15.8-7.9 35-1.5 42.9 14.3s1.5 35-14.3 42.9L295.6 384l134.8 67.4c15.8 7.9 22.2 27.1 14.3 42.9s-27.1 22.2-42.9 14.3L224 419.8 46.3 508.6c-15.8 7.9-35 1.5-42.9-14.3s-1.5-35 14.3-42.9L152.4 384 17.7 316.6c-15.8-7.9-22.2-27.1-14.3-42.9"/></svg></span> En effet,  le niveau des titres permet de structurer le contenu.  Les lecteurs d'écran utilisent cette hiérarchie pour naviguer efficacement à travers le contenu, améliorant ainsi l'accessibilité. Les moteurs de recherche utilisent ces balises pour comprendre la structure et l'importance du contenu, ce qui peut influencer le classement des pages.</p>
+<p>Toute page doit possèder un titre principale <code>&lt;h1&gt;</code> et les titres suivants respectront la hiérachie.  Et ne vous tracassez pas du visuel, celui-ci sera réalisé en CSS.</p>
+</details>
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bGPbmML" data-pen-title="html :  6 titres " data-user="Flolec" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/Flolec/pen/bGPbmML">
+  html :  6 titres </a> by Flolec (<a href="https://codepen.io/Flolec">@Flolec</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<h2 id="paragraphe">Paragraphe <a name="para"></a></h2>
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="YzoKRKV" data-pen-title="Untitled" data-user="Flolec" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/Flolec/pen/YzoKRKV">
+  Untitled</a> by Flolec (<a href="https://codepen.io/Flolec">@Flolec</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<p>Remarquez, par défaut, la balise provoque un retour à la ligne. Résistez à la tentation d'englober des éléments avec des <code>&lt;p&gt;</code> uniquement pour réaliser des retours à la ligne...</p>
+<p>La balise <code>&lt;p&gt;</code> doit être utilisée pour englobler du contenu représentant des paragraphes. </p>
+<p>Exemple avec une énumération de données.</p>
+<div class="admonition failure inline">
+<p class="admonition-title"><span class="twemoji redWhite"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 80c-8.8 0-16 7.2-16 16v320c0 8.8 7.2 16 16 16h384c8.8 0 16-7.2 16-16V96c0-8.8-7.2-16-16-16zM0 96c0-35.3 28.7-64 64-64h384c35.3 0 64 28.7 64 64v320c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64zm175 79c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9"/></svg></span> Don't do this </p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>  Liste de courses
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Pomme<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Poire<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Pêche<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div>
+</div>
+<div class="admonition success inline">
+<p class="admonition-title"><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Do this </p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>  Liste de courses
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Pomme<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Poire<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Pêche<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></code></pre></div>
+</div>
+<div class="clearFloat"></div>
+
+<h2 id="liste">Liste <a name="liste"></a></h2>
+<h3 id="liste-ordonnee">Liste ordonnée</h3>
+<p class="codepen" data-height="200" data-default-tab="html,result" data-slug-hash="bGPbQLZ" data-pen-title="Html : liste ordonnée" data-user="Flolec" style="height: 200px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/Flolec/pen/bGPbQLZ">
+  Html : liste ordonnée</a> by Flolec (<a href="https://codepen.io/Flolec">@Flolec</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<h3 id="liste-non-ordonnee">Liste non ordonnée</h3>
+<iframe height="200" style="width: 100%;" scrolling="no" title="Html : liste non ordonnée" src="https://codepen.io/Flolec/embed/wvLwQyN?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/Flolec/pen/wvLwQyN">
+  Html : liste non ordonnée</a> by Flolec (<a href="https://codepen.io/Flolec">@Flolec</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<h3 id="listes-imbriquees">Listes imbriquées</h3>
+<iframe height="300" style="width: 100%;" scrolling="no" title="Html : liste non ordonnée" src="https://codepen.io/Flolec/embed/NWZKEYV?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/Flolec/pen/NWZKEYV">
+  Html : liste non ordonnée</a> by Flolec (<a href="https://codepen.io/Flolec">@Flolec</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<p>Erreur classique : les enfants directs du <code>&lt;ul&gt;</code> doivent être obligatoirement des <code>&lt;li&gt;</code>.
+Les sous-listes doivent donc être incluses dans les balises <code>&lt;li&gt;…&lt;/li&gt;</code> de la liste principale.</p>
+<div class="admonition failure inline">
+<p class="admonition-title"><span class="twemoji redWhite"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 80c-8.8 0-16 7.2-16 16v320c0 8.8 7.2 16 16 16h384c8.8 0 16-7.2 16-16V96c0-8.8-7.2-16-16-16zM0 96c0-35.3 28.7-64 64-64h384c35.3 0 64 28.7 64 64v320c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64zm175 79c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9"/></svg></span> Don't do this </p>
+<div class="language-html highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a>  <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Cerise<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="hll">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Pomme<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="hll">      <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="hll">        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Gala<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="hll">        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>JonaGold<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="hll">      <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a>    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Poire<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a>    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Pêche<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a>  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></code></pre></div></td></tr></table></div>
+</div>
+<div class="admonition success inline">
+<p class="admonition-title"><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Do this </p>
+<div class="language-html highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span>
+<span class="normal"><a href="#__codelineno-3-11">11</a></span>
+<span class="normal"><a href="#__codelineno-3-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a>  Liste de courses
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>  <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="hll">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Cerise<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="hll">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Pomme
+</span></span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="hll">      <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="hll">        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Gala<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="hll">        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>JonaGold<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8"></a>      <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9"></a>    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10"></a>    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Poire<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11"></a>    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Pêche<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12"></a>  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></code></pre></div></td></tr></table></div>
+</div>
+<div class="clearFloat"></div>
+
+<h2 id="strong-gras">Strong (gras) <a name="evidence"></a></h2>
+<p>La balise  <code>&lt;strong&gt;</code> indique que le texte a une importance particulière. Cela se traduit généralement par un affichage en gras.</p>
+<h2 id="emphase-italique">Emphase (italique)</h2>
+<p>La balise  <code>&lt;em&gt;</code> indique un texte sur lequel on veut insister. Cela se traduit généralement par un affichage en italique.</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a9 9 0 0 0-.542-.68q-.126-.149-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259q-.142.172-.268.319c-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848q.113-.133.213-.253c.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75M5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5M6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75"/></svg></span>
+<strong>Tip:</strong> On peut bien sûr cumuler les balises</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/Flolec/embed/ExBYOrm?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/Flolec/pen/ExBYOrm">
+  Untitled</a> by Flolec (<a href="https://codepen.io/Flolec">@Flolec</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<h2 id="image">Image <a name="image"></a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>&lt;img src=&quot;/chemin/fichier.ext&quot; alt=&quot;texte alternatif&quot; width=&quot;100&quot; height=&quot;50&quot; &gt;
+</span></code></pre></div>
+<ul>
+<li>L'attribut <code>src:</code> le chemin de l'image...</li>
+<li>L'attribut <code>alt:</code> obligatoire et contient le texte qui sera affiché si l'image ne peut être chargée. Ce texte est également important pour les non-voyants.</li>
+<li>Les attributs <code>width</code> et <code>height</code> : ils permettent de spécifier en pixels la taille de l'image. Pour accélérer le rendu de la page, il est recommandé de spécifier les dimensions de l'image.</li>
+</ul>
+<p><strong><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> Remarque importante</strong> : Pour assurer la qualité du rendu des images et éviter un temps de chargement trop important, les images d'un site doivent être redimensionnées aux dimensions finales d'affichage à l'aide d'un logiciel de traitement d'images (Photoshop, Gimp, ...). Il est aussi nécessaire d'utiliser le meilleur format de fichier pour les images; ainsi pour les plus courants:</p>
+<ul>
+<li>PNG: (Portable Network Graphic) format compressé sans perte, supporte la transparence, idéal pour logo, dessin,...</li>
+<li>JPG: (Joint Photographic Expert Group) format très compressé pour photo, pas de transparence, perte de qualité à la sauvegarde,</li>
+<li>GIF: (Graphics Interchange Format) format peu compressé sans perte, supporte la transparence et les animations, idéal pour image avec peu de dégradés de couleurs, animations simples.</li>
+</ul>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a9 9 0 0 0-.542-.68q-.126-.149-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259q-.142.172-.268.319c-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848q.113-.133.213-.253c.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75M5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5M6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75"/></svg></span>
+<strong>Rappel:</strong> Évitez les espaces et les caractères accentués dans les noms de dossiers et noms de fichiers.</p>
+<h2 id="hyperlien">Hyperlien <a name="lien"></a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>&lt;a href=&quot;url&quot; target=&quot;_blank&quot;&gt; élément cliquable &lt;/a&gt;
+</span></code></pre></div>
+<ul>
+<li>L'attribut <code>href</code>: l'url vers la ressource vers laquelle pointe le lien</li>
+<li>L'attribut <code>target</code>: indique si le lien sera ouvert dans un nouvel onglet (_blank). Si attribut omis, le lien est ouvert dans le même onglet.</li>
+<li>L'attribut <code>title</code>: texte d'info-bulle qui apparait au survol du lien</li>
+</ul>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a9 9 0 0 0-.542-.68q-.126-.149-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259q-.142.172-.268.319c-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848q.113-.133.213-.253c.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75M5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5M6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75"/></svg></span>
+<strong>Tip :</strong> L'élément cliquable peut être un texte, une image, un bouton, ....</p>
+<h2 id="saut-de-ligne">Saut de ligne <a name="saut"></a></h2>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>&lt;br&gt;
+</span></code></pre></div>
+Affiche un saut de ligne (en général dans un paragraphe).</p>
+<p><strong><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> Remarque importante</strong> : N'utilisez pas la balise <code>&lt;br&gt;</code> pour espacer les éléments ! Toutes les mises en page seront réalisées via les CSS.</p>
+<h2 id="les-tableaux">Les tableaux <a name="tab"></a></h2>
+<p>Un tableau  <code>&lt;table&gt;</code>  est conçu ligne  <code>&lt;tr&gt;</code>  par ligne. Chaque ligne contient des cellules  <code>&lt;td&gt;</code> . Les cellules d'entête  <code>&lt;th&gt;</code>  sont placées généralement dans la première ligne du tableau.</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a9 9 0 0 0-.542-.68q-.126-.149-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259q-.142.172-.268.319c-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848q.113-.133.213-.253c.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75M5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5M6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75"/></svg></span>
+<strong>Tip:</strong> Sans css, il n'est pas possible d'afficher des bordures, des espaces... Attention à ne pas utiliser des attributs <strong><em>dépréciés</em></strong>.</p>
+<p><strong><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> Remarque importante</strong> :  les tableaux ne sont pas utilisés pour réaliser des mises en pages.  Les tableaux sont utilisés pour afficher des données tabulaires.</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="Hrml : tableau" src="https://codepen.io/Flolec/embed/GRbKwLP?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/Flolec/pen/GRbKwLP">
+  Hrml : tableau</a> by Flolec (<a href="https://codepen.io/Flolec">@Flolec</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<h2 id="les-entites-html">Les entités HTML <a name="entite"></a></h2>
+<p>Deux formats existent :</p>
+<ul>
+<li>par code UTF-8 : le signe égal peut être affiché par <code>&amp;#61;</code> (code décimal) ou <code>&amp;#x3D;</code> (code hexadécimal)</li>
+<li>par mot-clef: le signe égal peut être affiché par <code>&amp;equals;</code></li>
+</ul>
+<p>Tous les caractères peuvent être écrits grâce aux entités HTML. Les entités commencent toujours par "&amp;" et se terminent par ";".
+Les entités sont généralement utilisées pour afficher des caractères réservés (qui seraient autrement interprétés comme du code HTML) et des caractères invisibles (comme des espaces insécables).</p>
+<p>Vous pouvez exploiter cette <a href="https://dev.w3.org/html5/html-author/charref" title="Liste d'entités HTML">liste des entités HTML</a>.</p>
+<p>Comparez les codes html et les rendus :</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="Html : entités html" src="https://codepen.io/Flolec/embed/gONYQNE?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/Flolec/pen/gONYQNE">
+  Html : entités html</a> by Flolec (<a href="https://codepen.io/Flolec">@Flolec</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025, G.Baltus, basé sur les notes originales de F.Leclercq. Tous droits réservés.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "toc.integrate", "header.autohide"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
