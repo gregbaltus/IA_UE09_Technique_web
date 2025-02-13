@@ -1,0 +1,1672 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../img/helmoDots.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Exercice - IA-UE09-Techniques Web</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#exe1-offre-de-prix" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../.." title="IA-UE09-Techniques Web" class="md-header__button md-logo" aria-label="IA-UE09-Techniques Web" data-md-component="logo">
+      
+  <img src="../../img/HELMo_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IA-UE09-Techniques Web
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Exercice
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Acceuil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../00_UE09/" class="md-tabs__link">
+        
+  
+    
+  
+  EU09
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../01_HistoireWeb/" class="md-tabs__link">
+          
+  
+  Historique du web
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../02_htmlBase/" class="md-tabs__link">
+          
+  
+  Base de l'HTML
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../03_htmlBalise/" class="md-tabs__link">
+          
+  
+  Balise
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../04_htmlSemantique/" class="md-tabs__link">
+          
+  
+  Sémantique
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../05_htmlFormulaire/" class="md-tabs__link">
+          
+  
+  Formulaire
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="IA-UE09-Techniques Web" class="md-nav__button md-logo" aria-label="IA-UE09-Techniques Web" data-md-component="logo">
+      
+  <img src="../../img/HELMo_logo.png" alt="logo">
+
+    </a>
+    IA-UE09-Techniques Web
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Acceuil
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_UE09/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EU09
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Historique du web
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Historique du web
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_HistoireWeb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bref historique
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_HistoireWeb/internet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    L'internet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_HistoireWeb/web/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Le Web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_HistoireWeb/Risque/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les Risques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Base de l'HTML
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Base de l'HTML
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_htmlBase/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les langages du Web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_htmlBase/baseHtml/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les bases de l'HTML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_htmlBase/structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    La structure global
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_htmlBase/codage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les codages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_htmlBase/navigateur/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les naviguateurs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Balise
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Balise
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_htmlBalise/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Découverte
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_htmlBalise/balises/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Balises
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_htmlBalise/exercice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sémantique
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Sémantique
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_htmlSemantique/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Évolution de l'HTML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_htmlSemantique/html/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web sémantique
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_htmlSemantique/baliseSemantique/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Balise sémantique
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_htmlSemantique/bonnePratique/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bonnes pratiques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_htmlSemantique/validation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Respect des standards
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_htmlSemantique/exercice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Formulaire
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Formulaire
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_htmlFormulaire/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_htmlFormulaire/balise/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Balises
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_htmlFormulaire/exercice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Exercice</h1>
+
+<h2 id="exe1-offre-de-prix">Exe1 : Offre de prix</h2>
+<h3 id="methode"><strong>Méthode</strong></h3>
+<ul>
+<li>Créez un nouveau dossier nommé <code>flexOffrePrix</code> </li>
+<li>
+<p>Dans ce dossier,</p>
+</li>
+<li>
+<p>créez un nouveau fichier nommé <code>flexOffrePrix.html</code></p>
+</li>
+<li>copiez-collez ce code dans le fichier html</li>
+</ul>
+<details class="abstract">
+<summary>Code à copier</summary>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        <span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>            <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#home&quot;</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#projects&quot;</span><span class="p">&gt;</span>Projects<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#about&quot;</span><span class="p">&gt;</span>About<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#contact&quot;</span><span class="p">&gt;</span>Contact<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>            <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    <span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>        <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>            <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Nos offres<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>            <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>                <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Beginner<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>$10 <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>/ month<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>                <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Feature 1<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Feature 2<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Feature 3<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>                <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>                <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Get Started<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>            <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>            <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>                <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Standard<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>$20 <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>/ month<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>                <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Feature 1<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Feature 2<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Feature 3<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>                <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>                <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Get Started<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>            <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>            <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>                <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Premium<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>$30 <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>/ month<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>                <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a>                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Feature 1<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a>                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Feature 2<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Feature 3<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a>                <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a>                <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Get Started<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a>            <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a>        <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a>    <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
+</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a>    <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a>    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>@Flexbox<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a>    <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></code></pre></div>
+</details>
+<ul>
+<li>créez un nouveau dossier nommé <code>css</code></li>
+<li>
+<p>dans ce dossier css, créez un nouveau fichier nommé <code>flexOffrePrix.css</code></p>
+</li>
+<li>
+<p>Reproduisez l'interface en tenant compte des consignées données ci-dessous <a href="../../img/08_cssFlex/exeFlexOffrePrix.jpg" target="_blank">&gt;&gt; Voir l'interface</a></p>
+</li>
+</ul>
+<h3 id="contraintes"><strong>Contraintes</strong></h3>
+<ul>
+<li>Vous ne pouvez pas utiliser de techniques comme le float, position absolue, position relative.</li>
+<li>Le code html ne peut être modifié, seuls des class ou id peuvent être ajoutés</li>
+<li>Le code Html doit être valide W3C</li>
+<li>Le code Css doit être valide W3C</li>
+</ul>
+<h3 id="par-ou-commencer"><strong>Par où commencer ?</strong></h3>
+<ul>
+<li>Analysez le code html fourni.</li>
+<li>La feuille de style doit être externe et liée à la page html. Elle sera située dans le dossier <code>css</code>. (<a href="../../06_cssBase/liaison/#liaisonCss" target="_blank">Liaison</a>)</li>
+</ul>
+<h3 id="consignes"><strong>Consignes</strong></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Pour vous aider, vous avez des <em>astuces</em>. Utilisez l'astuce uniquement si vous êtes bloqués ou si vous désirez vérifier ce que vous avez réalisé.</p>
+</div>
+<h4 id="styles-generaux">Styles généraux</h4>
+<ul>
+<li>Le titre de la page est "Offres de prix"</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Le titre de la page s'affiche dans l'onglet via la balise <code>&lt;title&gt;</code>. <a href="../../03_htmlBalise/#titre-de-la-page" target="_blank">&gt;&gt; info </a></p>
+</details>
+<ul>
+<li>La police utilisée est <code>Tahoma</code> mais attention, prévoyez une sélection automatique d'une autre police sans empattement (sans-serif) si <code>Tahoma</code> n'est pas disponible.</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Utilisez l'héritage et spécifiez la police à utiliser dans le body. <a href="../../06_cssBase/miseFormeTexte/#font-family" target="_blank">&gt;&gt; info </a></p>
+</details>
+<ul>
+<li>La couleur de fond de la page est <code>#eee;</code></li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Utilisez l'héritage et spécifiez la couleur de fond à utiliser dans le body. <a href="../../06_cssBase/arrierePlan/#background-color" target="_blank">&gt;&gt; info </a></p>
+</details>
+<ul>
+<li>La taille de la police doit être une fois celle spécifiée par le navigateur</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Utilisez l'héritage et spécifiez la taille de la police à utiliser dans le body. Utilisez l'unité rem.</p>
+</details>
+<ul>
+<li>Quand on regarde le modèle, on s'aperçoit que le contenu ne prend pas toute la largeur du navigateur. Utilisons une classe générique qui sera appliquée aux différents éléments html.</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p><div class="language-css highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">.</span><span class="nc">centrage</span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="c">/* ici les déclarations des styles*/</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">}</span>
+</span></code></pre></div>
+Pour centrer un élément de type bloc, vous devez lui donner une largeur et des marges latérales automatiques.
+<a href="../../07_cssBoite/centrerBloc/" target="_blank">&gt;&gt; info </a></p>
+<p>La class doit être appliquée aux conteneurs qui seront centrés.
+<code>&lt;nav class="centrage"&gt;</code>
+<code>&lt;section class="centrage&gt;</code>
+<code>&lt;div class="centrage&gt;</code>
+A votre avis, pourquoi appliquer la class centrage au div et non au footer ?</p>
+</details>
+<ul>
+<li>Quand on regarde le modèle, on s'aperçoit que le header et le footer ont les mêmes styles.</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Regroupez les sélecteurs.
+<a href="../../06_cssBase/selecteur/#liste-de-selecteurBalise" target="_blank">&gt;&gt; info </a></p>
+<p>Appliquez les styles communs (color et background)</p>
+</details>
+<ul>
+<li>Le contenu du header et du footer ne sont pas collés au bord. Espacez le contenu des bords du header et du footer</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Utiliser un padding sur le header et le footer</p>
+</details>
+<ul>
+<li>Les bords des header et footer doivent être collés au bord du navigateur. A votre avis, d'où vient l'espace ?</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Annuler les marges externes (margin) du body</p>
+</details>
+<h4 id="concentrons-nous-sur-le-menu">Concentrons-nous sur le menu.</h4>
+<p>Quand on regarde le modèle, on s'aperçoit que</p>
+<ul>
+<li>Les éléments du menu n'ont pas de puce. Masquons-les.</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Utilisez une classe, par exemple, <code>nav-menu</code> sur la liste <code>&lt;ul class="nav-menu"&gt;</code>
+Utilisez la propriété <code>list-style-type</code>
+<a href="https://developer.mozilla.org/fr/docs/Web/CSS/list-style-type" target="_blank">&gt;&gt;Info</a></p>
+</details>
+<ul>
+<li>Nous constatons que la couleur du texte des liens n'est pas blanche mais bleue. En effet, la couleur du texte des liens n'est pas héritée. Nous allons donc, explicitement, leur spécifier une couleur de texte. De plus, le texte de lien est plus grands, gras et non-souligné.</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<ul>
+<li>Spécifions que nous travaillons sur les liens du menu <code>.nav-menu li a</code> </li>
+<li>Blanc =&gt; <a href="../../06_cssBase/miseFormeTexte/#color" target="_blank">&gt;&gt;Info</a> - Gras =&gt; <a href="../../06_cssBase/miseFormeTexte/#font-weight" target="_blank">&gt;&gt;Info</a> </li>
+<li>Plus Grand (1.1 )=&gt; <a href="../../06_cssBase/miseFormeTexte/#font-size" target="_blank">&gt;&gt;Info</a> - Non souligné =&gt; <a href="https://developer.mozilla.org/fr/docs/Web/CSS/text-decoration" target="_blank">&gt;&gt;Info</a></li>
+</ul>
+</details>
+<ul>
+<li>Les éléments du menu doivent être positionnés les uns à côté des autres.
+  Nous allons donc utiliser le flex.
+  Posez-vous les questions suivantes :<ul>
+<li>Qui est le parent direct des éléments qui doivent être positionnés côte à côte ? Cet élément sera le conteneur Flex.</li>
+<li>Les éléments positionnés côte à côte doivent-ils autoriser le retour à la ligne ?</li>
+<li>Comment les enfants du conteneur occupent-ils l'espace ?</li>
+<li>Les enfants du conteneur doivent-il posséder une largeur définie ?</li>
+</ul>
+</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Qui est le parent direct des éléments qui doivent être positionnés côte à côte ? Cet élément sera le conteneur Flex. ==&gt; la balise <code>&lt;ul&gt;</code> aura son display en flex. <a href="../conteneur/" target="_blank">&gt;&gt;Info</a> </p>
+<blockquote>
+<p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> Utilisons la class nav-menu appliquée sur <code>&lt;ul&gt;</code></p>
+</blockquote>
+<p>Les éléments positionnés côte à côte doivent-ils autoriser le retour à la ligne ? Oui pour être responsive =&gt; le balise <code>&lt;ul&gt;</code> qui est le conteneur flex autorisera le retour à la ligne de ses enfants directs =&gt; wrap <a href="../conteneurWrap/" target="_blank">&gt;&gt;Info</a></p>
+<blockquote>
+<p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> Utilisons la class nav-menu appliquée sur <code>&lt;ul&gt;</code></p>
+</blockquote>
+<p>Les éléments se positionnent côte à côte mais ils sont collés.  Nous ne désirons pas qu'ils prennent tous l'espace disponible.  On va donc simplement les espacer.  Nous pouvons travailler avec les marges mais nous pouvons également travailler avec la propriété <code>gap</code>  <a href="https://developer.mozilla.org/fr/docs/Web/CSS/gap" target="_blank">&gt;&gt;Info</a></p>
+<blockquote>
+<p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> Utilisons la class nav-menu appliquée sur <code>&lt;ul&gt;</code></p>
+</blockquote>
+<p>Observez bien, le menu est décalé vers la droite.  Utilisons l'inspecteur pour identifier d'où provient ce décalage.
+<code>ul</code> comprend des marges et des padding implicites.
+Supprimons les marges et les padding de cet ul.</p>
+<blockquote>
+<p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> Utilisons la class nav-menu appliquée sur <code>&lt;ul&gt;</code></p>
+</blockquote>
+</details>
+<h4 id="realisons-les-cartes">Réalisons les cartes</h4>
+<ul>
+<li>Les cartes ont un fond blanc, une ombre et des bords arrondis</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Créez un sélecteur par exemple <code>price-card</code>. Cette class sera attribuée aux articles.
+Attribuez-lui</p>
+<ul>
+<li>
+<p>un fond blanc (<a href="../../06_cssBase/arrierePlan/" target="_blank">&gt;&gt;info</a>  )</p>
+</li>
+<li>
+<p>une ombre (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow" target="_blank">&gt;&gt;info</a>  )</p>
+</li>
+<li>
+<p>des bords arrondis (<a href="https://developer.mozilla.org/fr/docs/Web/CSS/border-radius" target="_blank">&gt;&gt;info</a>  )</p>
+</li>
+</ul>
+</details>
+<ul>
+<li>Les 3 cartes doivent être positionnées les unes à côté des autres.
+    Nous allons donc utiliser le flex.
+    Posez-vous les questions suivantes :<ul>
+<li>Qui est le parent direct des éléments qui doivent être positionnés côte à côte ? Cet élément sera le conteneur Flex.</li>
+<li>Les éléments positionnés côte à côte doivent-ils autoriser le retour à la ligne ?</li>
+<li>Les enfants du conteneur doivent-il posséder une largeur définie ?</li>
+<li>Comment les enfants du conteneur occupent-ils l'espace ?</li>
+</ul>
+</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p><em>Qui est le parent direct des éléments qui doivent être positionnés côte à côte ? Cet élément sera le conteneur Flex.</em> ==&gt; la balise <code>&lt;section&gt;</code> aura son display en flex. <a href="../conteneur/" target="_blank">&gt;&gt;Info</a>
+Utilisons, par exemple, une classe nommée <code>pricing-section</code> qui sera attribuée à la section parente.</p>
+<p>Rappel : plusieurs class peuvent être attribuées au même élément html <code>&lt;section class="centrage pricing-section"&gt;</code></p>
+<p><em>Les éléments positionnés côte à côte doivent-ils autoriser le retour à la ligne ?</em> Oui pour être responsive =&gt; la balise <code>&lt;section&gt;</code> qui est le conteneur flex autorisera le retour à la ligne de ses enfants directs =&gt; wrap <a href="../css_flexbox/conteneurWrap.md" target="_blank">&gt;&gt;Info</a></p>
+<blockquote>
+<p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> Utilisons la class <code>pricing-section</code> appliquée sur <code>&lt;section&gt;</code></p>
+</blockquote>
+<p>Oups, le titre se met à côté des cartes.  Pas de panique, c'est normal.
+En effet, une fois la <code>&lt;section&gt;</code> devenue conteneur flex, tous ses enfants directs sont positionnés côte à côte.  Le titre se place donc à côté des cartes.</p>
+<p>Pour éviter cela, nous allons demander au titre d'occuper tous l'espace disponible.  Pour ce faire, utilisons la propriété <code>flex-basis</code>.
+<div class="language-css highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="w">    </span><span class="p">.</span><span class="nc">pricing-section</span><span class="w"> </span><span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">        </span><span class="k">flex-basis</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="p">}</span>
+</span></code></pre></div>
+Eh hop, le tour est joué !</p>
+<p><em>Les enfants du conteneur doivent-il posséder une largeur définie ?</em> Actuellement, la largeur de la carte est dépendante de son contenu. Nous allons leur imposer une taille en utilisant la propriété <code>flex-basis</code>. Ex : <code>flex-basis: 15rem;</code></p>
+<blockquote>
+<p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> La propriété <code>flex-basis</code> doit être appliquée aux enfants ! Utilisons la classe   <code>.price-card</code> déclarée précédemment.</p>
+</blockquote>
+<p><em>Comment les enfants du conteneur occupent-ils l'espace ?</em> Nous désirons qu'ils soient centrés sur la largeur de leur parent et posséder un espace entre eux.  Pour cela, utilisons les propriétés <code>justify-content</code> et <code>gap</code>.   <a href="../css_flexbox/conteneurJustifyContent.md" target="_blank">&gt;&gt;Info</a>`</p>
+<blockquote>
+<p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> Utilisons la class <code>pricing-section</code> appliquée sur <code>&lt;section&gt;</code></p>
+</blockquote>
+</details>
+<ul>
+<li>Le contenu de la vignette n'est pas collé au bord</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Utilisez des marges intérieurs (padding) </p>
+<blockquote>
+<p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> Utilisons la class <code>price-card</code></p>
+</blockquote>
+</details>
+<ul>
+<li>Le texte est centré.</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Utilisez text-align: center; </p>
+<blockquote>
+<p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> Utilisons la class <code>price-card</code></p>
+</blockquote>
+</details>
+<ul>
+<li>La liste ne contient pas de puce.</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Utilisez list-style: none </p>
+<blockquote>
+<p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> Vous pouvez spécifier la liste de la class price-card =&gt; <code>.price-card ul</code></p>
+</blockquote>
+<p>Observez le décalage.  A votre avis, d'où vient-il ?
+Supprimer les marges et le padding de la liste. A ce moment, nous observons que la liste est collée au lien Get Started.  Modifions les marges haut / bas.  <code>margin: 1rem 0;</code></p>
+</details>
+<ul>
+<li>
+<p>La vignette possède un bouton de réservation qui</p>
+</li>
+<li>
+<p>est de couleur <code>#008CBA;</code></p>
+</li>
+<li>comprend du texte blanc</li>
+<li>des bords arrondis</li>
+<li>des marges intérieures pour éviter que le contenu colle au bord du bouton.</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Créez, par exemple, une class nommée <code>buttonAction</code></p>
+<p>Oups,  le bouton chevauche d'autres éléments.  Pourquoi ? Rappelez-vous : <code>&lt;a&gt;</code> est une balise en ligne. Le comportement des padding ne sont pas les mêmes pour les éléments en ligne et pour les éléments de type block.  Modifiez le display pour que l'élément se comporte comme un inline-block.</p>
+</details>
+<ul>
+<li>Les vignettes ne sont pas collées au bord du footer et le titre "Nos offres" est plus bas.</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Utilisons un padding sur la section pour que l'ensemble de son contenu ne soit pas collé au bord. </p>
+<blockquote>
+<p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> Utilisez la class <code>pricing-section</code></p>
+</blockquote>
+</details>
+<ul>
+<li>Modifions la couleur du prix et la taille  </li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Appliquons du vert sur l'ensemble du h3 / modifions la taille / modifions les marges externes / modifions l'épaisseur de la police
+<code>.price-card h3 {
+    font-size: 2rem;
+    color: #27ae60;
+    margin: 0.5rem 0;
+    font-weight: lighter;
+}</code></p>
+</details>
+<ul>
+<li>Modifions la couleur du prix et la taille /month</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Modifions la taille et la couleur du texte
+<code>.price-card h3 span {
+    font-size: 0.8rem;
+    color: #888;
+}</code></p>
+</details>
+<ul>
+<li>Augmontons l'espace entre les éléments Feature</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p><code>.price-card ul li {
+        margin: 0.5rem 0;
+}</code></p>
+</details>
+<h2 id="exe2-crearchitex">Exe2 : Crearchitex</h2>
+<h3 id="methode_1"><strong>Méthode</strong></h3>
+<ul>
+<li>Créez un nouveau dossier nommé <code>flexCrearchitex</code> </li>
+<li>
+<p>Dans ce dossier,</p>
+</li>
+<li>
+<p>créez un nouveau fichier nommé <code>flexCrearchitex.html</code></p>
+</li>
+<li>copiez-collez ce code dans le fichier html</li>
+</ul>
+<details class="abstract">
+<summary>Code à copier</summary>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>CrearchiteX<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>        <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>            <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;img/logo.png&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;CrearchiteX Logo&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>            <span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>                <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;current&quot;</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>Equipe<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>Projet<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>Contact<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>                <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>            <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>    <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>    <span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>        <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>            <span class="p">&lt;</span><span class="nt">blockquote</span><span class="p">&gt;</span>Le bureau d’architecture <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>CrearchiteX<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> allie création et
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>                techniques.<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span> Construction, rénovation et design intérieur.<span class="p">&lt;/</span><span class="nt">blockquote</span><span class="p">&gt;</span>
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>            <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;img/presentation.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Présentation bureau&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>            <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Nos forces<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>            <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Construction<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>Proin iaculis purus consequat sem cursus digni
+</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>                    ssim. Donec porttitor entume suscipit. Aenean rhoncus posuere odio in tincidunt.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Rénovation<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>Nam aliquam volutpat leo vel lorem bibendum.
+</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>                    Nuncea
+</span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>                    elit purusa, tempus pulvinar rhoncus egesta vel nibh volutpat leo.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-3-36"><a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Intérieur<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>Fusce porttitor turpis quis urna molestie cons
+</span><span id="__span-3-37"><a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>                    equat.
+</span><span id="__span-3-38"><a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a>                    Nam felis purus, tincidunt sed dapibus ugravida fusce et magna libero.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-3-39"><a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>            <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-3-40"><a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a>        <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</span><span id="__span-3-41"><a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a>        <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+</span><span id="__span-3-42"><a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a>            <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Travaux récents<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-3-43"><a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a>            <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-3-44"><a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a>                <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;img/travRecent01.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Travaux récents 01 Maison unifamiliale &quot;</span><span class="p">&gt;</span>
+</span><span id="__span-3-45"><a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a>                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Maison unifamiliale<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span><span id="__span-3-46"><a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a>                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Rénovation complète des façades principales, extensions magnifiques.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-3-47"><a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a>            <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-3-48"><a id="__codelineno-3-48" name="__codelineno-3-48" href="#__codelineno-3-48"></a>            <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-3-49"><a id="__codelineno-3-49" name="__codelineno-3-49" href="#__codelineno-3-49"></a>                <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;img/travRecent02.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Travaux récents 02 Fermette &quot;</span><span class="p">&gt;</span>
+</span><span id="__span-3-50"><a id="__codelineno-3-50" name="__codelineno-3-50" href="#__codelineno-3-50"></a>                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Fermette<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span><span id="__span-3-51"><a id="__codelineno-3-51" name="__codelineno-3-51" href="#__codelineno-3-51"></a>                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Restauration d&#39;une fermette à colombages du 16e s. en deux habitations.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-3-52"><a id="__codelineno-3-52" name="__codelineno-3-52" href="#__codelineno-3-52"></a>            <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-3-53"><a id="__codelineno-3-53" name="__codelineno-3-53" href="#__codelineno-3-53"></a>            <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-3-54"><a id="__codelineno-3-54" name="__codelineno-3-54" href="#__codelineno-3-54"></a>                <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;img/travRecent03.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Travaux récents 03 Multi-logements&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-3-55"><a id="__codelineno-3-55" name="__codelineno-3-55" href="#__codelineno-3-55"></a>                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Multi-logements<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span><span id="__span-3-56"><a id="__codelineno-3-56" name="__codelineno-3-56" href="#__codelineno-3-56"></a>                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Transformation d&#39;un immeuble en deux logements.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-3-57"><a id="__codelineno-3-57" name="__codelineno-3-57" href="#__codelineno-3-57"></a>            <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-3-58"><a id="__codelineno-3-58" name="__codelineno-3-58" href="#__codelineno-3-58"></a>            <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-3-59"><a id="__codelineno-3-59" name="__codelineno-3-59" href="#__codelineno-3-59"></a>                <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;img/travRecent01.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Travaux récents 01 &quot;</span><span class="p">&gt;</span>
+</span><span id="__span-3-60"><a id="__codelineno-3-60" name="__codelineno-3-60" href="#__codelineno-3-60"></a>                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Maison unifamiliale<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span><span id="__span-3-61"><a id="__codelineno-3-61" name="__codelineno-3-61" href="#__codelineno-3-61"></a>                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Rénovation complète des façades principales, extensions magnifiques.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-3-62"><a id="__codelineno-3-62" name="__codelineno-3-62" href="#__codelineno-3-62"></a>            <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-3-63"><a id="__codelineno-3-63" name="__codelineno-3-63" href="#__codelineno-3-63"></a>            <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-3-64"><a id="__codelineno-3-64" name="__codelineno-3-64" href="#__codelineno-3-64"></a>                <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;img/travRecent02.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Travaux récents 02 &quot;</span><span class="p">&gt;</span>
+</span><span id="__span-3-65"><a id="__codelineno-3-65" name="__codelineno-3-65" href="#__codelineno-3-65"></a>                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Fermette<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span><span id="__span-3-66"><a id="__codelineno-3-66" name="__codelineno-3-66" href="#__codelineno-3-66"></a>                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Restauration d&#39;une fermette à colombages du 16e s. en deux habitations.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-3-67"><a id="__codelineno-3-67" name="__codelineno-3-67" href="#__codelineno-3-67"></a>            <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-3-68"><a id="__codelineno-3-68" name="__codelineno-3-68" href="#__codelineno-3-68"></a>            <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-3-69"><a id="__codelineno-3-69" name="__codelineno-3-69" href="#__codelineno-3-69"></a>                <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;img/travRecent03.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Travaux récents 03 &quot;</span><span class="p">&gt;</span>
+</span><span id="__span-3-70"><a id="__codelineno-3-70" name="__codelineno-3-70" href="#__codelineno-3-70"></a>                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Multi-logements<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span><span id="__span-3-71"><a id="__codelineno-3-71" name="__codelineno-3-71" href="#__codelineno-3-71"></a>                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Transformation d&#39;un immeuble en deux logements.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-3-72"><a id="__codelineno-3-72" name="__codelineno-3-72" href="#__codelineno-3-72"></a>            <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-3-73"><a id="__codelineno-3-73" name="__codelineno-3-73" href="#__codelineno-3-73"></a>            <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-3-74"><a id="__codelineno-3-74" name="__codelineno-3-74" href="#__codelineno-3-74"></a>                <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;img/travRecent03.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Travaux récents 03 &quot;</span><span class="p">&gt;</span>
+</span><span id="__span-3-75"><a id="__codelineno-3-75" name="__codelineno-3-75" href="#__codelineno-3-75"></a>                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Multi-logements<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span><span id="__span-3-76"><a id="__codelineno-3-76" name="__codelineno-3-76" href="#__codelineno-3-76"></a>                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Transformation d&#39;un immeuble en deux logements.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-3-77"><a id="__codelineno-3-77" name="__codelineno-3-77" href="#__codelineno-3-77"></a>            <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-3-78"><a id="__codelineno-3-78" name="__codelineno-3-78" href="#__codelineno-3-78"></a>            <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-3-79"><a id="__codelineno-3-79" name="__codelineno-3-79" href="#__codelineno-3-79"></a>                <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;img/travRecent03.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Travaux récents 03 &quot;</span><span class="p">&gt;</span>
+</span><span id="__span-3-80"><a id="__codelineno-3-80" name="__codelineno-3-80" href="#__codelineno-3-80"></a>                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Multi-logements<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span><span id="__span-3-81"><a id="__codelineno-3-81" name="__codelineno-3-81" href="#__codelineno-3-81"></a>                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Transformation d&#39;un immeuble en deux logements.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-3-82"><a id="__codelineno-3-82" name="__codelineno-3-82" href="#__codelineno-3-82"></a>            <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-3-83"><a id="__codelineno-3-83" name="__codelineno-3-83" href="#__codelineno-3-83"></a>        <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</span><span id="__span-3-84"><a id="__codelineno-3-84" name="__codelineno-3-84" href="#__codelineno-3-84"></a>
+</span><span id="__span-3-85"><a id="__codelineno-3-85" name="__codelineno-3-85" href="#__codelineno-3-85"></a>
+</span><span id="__span-3-86"><a id="__codelineno-3-86" name="__codelineno-3-86" href="#__codelineno-3-86"></a>    <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
+</span><span id="__span-3-87"><a id="__codelineno-3-87" name="__codelineno-3-87" href="#__codelineno-3-87"></a>    <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+</span><span id="__span-3-88"><a id="__codelineno-3-88" name="__codelineno-3-88" href="#__codelineno-3-88"></a>        <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-3-89"><a id="__codelineno-3-89" name="__codelineno-3-89" href="#__codelineno-3-89"></a>            <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-3-90"><a id="__codelineno-3-90" name="__codelineno-3-90" href="#__codelineno-3-90"></a>                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Contact<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span><span id="__span-3-91"><a id="__codelineno-3-91" name="__codelineno-3-91" href="#__codelineno-3-91"></a>                <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-3-92"><a id="__codelineno-3-92" name="__codelineno-3-92" href="#__codelineno-3-92"></a>                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Rue de l&#39;espoir, 666 <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>4000 Liège<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-3-93"><a id="__codelineno-3-93" name="__codelineno-3-93" href="#__codelineno-3-93"></a>                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>04 123 45 69<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-3-94"><a id="__codelineno-3-94" name="__codelineno-3-94" href="#__codelineno-3-94"></a>                <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-3-95"><a id="__codelineno-3-95" name="__codelineno-3-95" href="#__codelineno-3-95"></a>            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-3-96"><a id="__codelineno-3-96" name="__codelineno-3-96" href="#__codelineno-3-96"></a>            <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-3-97"><a id="__codelineno-3-97" name="__codelineno-3-97" href="#__codelineno-3-97"></a>                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Jobs<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span><span id="__span-3-98"><a id="__codelineno-3-98" name="__codelineno-3-98" href="#__codelineno-3-98"></a>                <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-3-99"><a id="__codelineno-3-99" name="__codelineno-3-99" href="#__codelineno-3-99"></a>                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Collaborateurs<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-3-100"><a id="__codelineno-3-100" name="__codelineno-3-100" href="#__codelineno-3-100"></a>                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Administratifs<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-3-101"><a id="__codelineno-3-101" name="__codelineno-3-101" href="#__codelineno-3-101"></a>                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Informatique<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-3-102"><a id="__codelineno-3-102" name="__codelineno-3-102" href="#__codelineno-3-102"></a>                <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-3-103"><a id="__codelineno-3-103" name="__codelineno-3-103" href="#__codelineno-3-103"></a>            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-3-104"><a id="__codelineno-3-104" name="__codelineno-3-104" href="#__codelineno-3-104"></a>            <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-3-105"><a id="__codelineno-3-105" name="__codelineno-3-105" href="#__codelineno-3-105"></a>                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Liens rapides<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span><span id="__span-3-106"><a id="__codelineno-3-106" name="__codelineno-3-106" href="#__codelineno-3-106"></a>                <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-3-107"><a id="__codelineno-3-107" name="__codelineno-3-107" href="#__codelineno-3-107"></a>                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Projets<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-3-108"><a id="__codelineno-3-108" name="__codelineno-3-108" href="#__codelineno-3-108"></a>                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Collaborateurs<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-3-109"><a id="__codelineno-3-109" name="__codelineno-3-109" href="#__codelineno-3-109"></a>                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Nous contacter<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-3-110"><a id="__codelineno-3-110" name="__codelineno-3-110" href="#__codelineno-3-110"></a>                <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-3-111"><a id="__codelineno-3-111" name="__codelineno-3-111" href="#__codelineno-3-111"></a>            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-3-112"><a id="__codelineno-3-112" name="__codelineno-3-112" href="#__codelineno-3-112"></a>        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-3-113"><a id="__codelineno-3-113" name="__codelineno-3-113" href="#__codelineno-3-113"></a>    <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+</span><span id="__span-3-114"><a id="__codelineno-3-114" name="__codelineno-3-114" href="#__codelineno-3-114"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-3-115"><a id="__codelineno-3-115" name="__codelineno-3-115" href="#__codelineno-3-115"></a>
+</span><span id="__span-3-116"><a id="__codelineno-3-116" name="__codelineno-3-116" href="#__codelineno-3-116"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></code></pre></div>
+</details>
+<ul>
+<li>créez un nouveau dossier nommé <code>css</code></li>
+<li>dans ce dossier css, créez un nouveau fichier nommé <code>flexCrearchitex.css</code></li>
+<li>
+<p>téléchargez les images <a href="../../img/08_cssFlex/imgCrearchitex.zip">image crearchitex</a></p>
+</li>
+<li>
+<p>Reproduisez l'interface en tenant compte des consignées données ci-dessous <a href="../../img/08_cssFlex/exeCrearchitexFlex.pdf" target="_blank">&gt;&gt; Voir l'interface</a></p>
+</li>
+</ul>
+<h3 id="contraintes_1"><strong>Contraintes</strong></h3>
+<ul>
+<li>Vous ne pouvez pas utiliser de techniques comme le float, position absolue, position relative.</li>
+<li>Le code Html ne peut être modifié, seuls des class ou id peuvent être ajoutés</li>
+<li>Le code Html doit être valide W3C</li>
+<li>Le code Css doit être valide W3C</li>
+</ul>
+<h3 id="par-ou-commencer_1"><strong>Par où commencer ?</strong></h3>
+<ul>
+<li>Analysez le code html fourni.</li>
+<li>La feuille de style doit être externe et liée à la page html. Elle sera située dans le dossier <code>css</code>. (<a href="../../06_cssBase/liaison/#liaisonCss" target="_blank">Liaison</a>)</li>
+<li>Travaillez étape par étape. Inspirez-vous de l'exercice précédent.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025, G.Baltus, basé sur les notes originales de F.Leclercq. Tous droits réservés.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "toc.integrate", "header.autohide"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1499 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../img/helmoDots.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Exercice - IA-UE09-Techniques Web</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#exe1-offre" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../.." title="IA-UE09-Techniques Web" class="md-header__button md-logo" aria-label="IA-UE09-Techniques Web" data-md-component="logo">
+      
+  <img src="../../img/HELMo_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IA-UE09-Techniques Web
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Exercice
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Acceuil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../00_UE09/" class="md-tabs__link">
+        
+  
+    
+  
+  EU09
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../01_HistoireWeb/" class="md-tabs__link">
+          
+  
+  Historique du web
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../02_htmlBase/" class="md-tabs__link">
+          
+  
+  Base de l'HTML
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../03_htmlBalise/" class="md-tabs__link">
+          
+  
+  Balise
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../04_htmlSemantique/" class="md-tabs__link">
+          
+  
+  Sémantique
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../05_htmlFormulaire/" class="md-tabs__link">
+          
+  
+  Formulaire
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="IA-UE09-Techniques Web" class="md-nav__button md-logo" aria-label="IA-UE09-Techniques Web" data-md-component="logo">
+      
+  <img src="../../img/HELMo_logo.png" alt="logo">
+
+    </a>
+    IA-UE09-Techniques Web
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Acceuil
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_UE09/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EU09
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Historique du web
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Historique du web
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_HistoireWeb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bref historique
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_HistoireWeb/internet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    L'internet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_HistoireWeb/web/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Le Web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_HistoireWeb/Risque/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les Risques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Base de l'HTML
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Base de l'HTML
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_htmlBase/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les langages du Web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_htmlBase/baseHtml/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les bases de l'HTML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_htmlBase/structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    La structure global
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_htmlBase/codage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les codages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_htmlBase/navigateur/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les naviguateurs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Balise
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Balise
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_htmlBalise/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Découverte
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_htmlBalise/balises/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Balises
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_htmlBalise/exercice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sémantique
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Sémantique
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_htmlSemantique/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Évolution de l'HTML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_htmlSemantique/html/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web sémantique
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_htmlSemantique/baliseSemantique/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Balise sémantique
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_htmlSemantique/bonnePratique/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bonnes pratiques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_htmlSemantique/validation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Respect des standards
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_htmlSemantique/exercice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Formulaire
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Formulaire
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_htmlFormulaire/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_htmlFormulaire/balise/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Balises
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_htmlFormulaire/exercice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Exercice</h1>
+
+<h2 id="exe1-offre">Exe1 : Offre</h2>
+<h3 id="methode"><strong>Méthode</strong></h3>
+<ul>
+<li>Créez un nouveau dossier nommé exeOffre</li>
+<li>
+<p>Dans ce dossier, </p>
+<ul>
+<li>créez un nouveau fichier nommé <code>offre.html</code> </li>
+<li>copiez-collez ce code dans le fichier html</li>
+</ul>
+<details class="abstract">
+<summary>Code à copier</summary>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Découvrez nos offres de voyage<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>            <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Voyage à Bali<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Profitez de nos offres spéciales pour découvrir les plages magnifiques de Bali.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>            <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>                <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;stars&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;material-icons&quot;</span><span class="p">&gt;</span>star<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;material-icons&quot;</span><span class="p">&gt;</span>star<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;material-icons&quot;</span><span class="p">&gt;</span>star<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;material-icons&quot;</span><span class="p">&gt;</span>star<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>                    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;material-icons&quot;</span><span class="p">&gt;</span>star_half<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>                <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>500 commentaires<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>            <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Réserver<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>        <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>    <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></code></pre></div>
+</details>
+<ul>
+<li>créez un nouveau dossier nommé <code>css</code></li>
+<li>dans ce dossier css, créez un nouveau fichier nommé <code>offre.css</code></li>
+<li>copiez-collez ce code dans la feuille css</li>
+</ul>
+<details class="abstract">
+<summary>Code à copier</summary>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c">/* Icônes étoile */</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">.</span><span class="nc">stars</span><span class="w"> </span><span class="p">.</span><span class="nc">material-icons</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mf">1.2</span><span class="kt">rem</span><span class="p">;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#FFD700</span><span class="p">;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">}</span>
+</span></code></pre></div>
+</details>
+<ul>
+<li>Reproduisez l'interface en tenant compte des consignées données ci-dessous  <a href="../../img/07_cssBoite/exe_offre.jpg" target="_blank">&gt;&gt; Voir l'interface</a>  </li>
+</ul>
+</li>
+</ul>
+<h3 id="contraintes"><strong>Contraintes</strong></h3>
+<ul>
+<li>Vous ne pouvez pas utiliser de techniques comme le flexbox, float, position absolue, position relative.</li>
+<li>Le code Html ne peut être modifié, seuls des class ou id peuvent être ajoutés</li>
+<li>Le code Html doit être valide W3C</li>
+<li>Le code Css doit être valide W3C</li>
+</ul>
+<h3 id="par-ou-commencer"><strong>Par où commencer ?</strong></h3>
+<ul>
+<li>Analysez le code html fourni.</li>
+<li>La partie <code>head</code> comprend un lien vers la bibliothèque d'icônes Material Icons de Google</li>
+</ul>
+<details class="tip">
+<summary>Material Icons</summary>
+<p>Le lien <a href="https://fonts.googleapis.com/icon?family=Material+Icons">https://fonts.googleapis.com/icon?family=Material+Icons</a> importe la bibliothèque d'icônes Material Icons de Google, une collection de symboles visuels (étoiles, flèches, etc.) utilisée pour embellir les interfaces web.</p>
+<p>Ce lien permet de :</p>
+<ul>
+<li>Charger les icônes comme une police : Les icônes sont traitées comme du texte, ce qui facilite leur redimensionnement et leur stylisation (couleur, taille).</li>
+<li>Accéder à un large choix d’icônes (<a href="https://fonts.google.com/icons">https://fonts.google.com/icons</a>).</li>
+</ul>
+<p><a href="https://developers.google.com/fonts/docs/material_symbols?hl=fr">&gt;&gt;Info Material Symbols</a></p>
+</details>
+<ul>
+<li>La feuille de style doit être externe et liée à la page html.  Elle sera située dans le dossier <code>css</code>. (<a href="../../06_cssBase/liaison/#liaisonCss" target="_blank">Liaison</a>)</li>
+</ul>
+<h3 id="consignes"><strong>Consignes</strong></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Pour vous aider, vous avez des <em>astuces</em>.  Utilisez l'astuce uniquement si vous êtes bloqués ou si vous désirez vérifier ce que vous avez réalisé. </p>
+</div>
+<ul>
+<li>Le titre de la page est "Offres de Voyage"</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Le titre de la page s'affiche dans l'onglet via la balise <code>&lt;title&gt;</code>.  <a href="../../03_htmlBalise/#titre-de-la-page" target="_blank">&gt;&gt; info </a></p>
+</details>
+<ul>
+<li>La police utilisée est l'arial mais attention, prévoyez une sélection automatique d'une autre police sans empattement (sans-serif) si l'Arial n'est pas disponible.</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Utilisez l'héritage et spécifier la police à utiliser dans le body.  <a href="../../06_cssBase/miseFormeTexte/#font-family" target="_blank">&gt;&gt; info </a></p>
+</details>
+<ul>
+<li>La couleur de fond de la page est <code>#f7f7f7;</code></li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Utilisez l'héritage et spécifier la couleur de fond à utiliser dans le body.  <a href="../../06_cssBase/arrierePlan/#background-color" target="_blank">&gt;&gt; info </a></p>
+</details>
+<ul>
+<li>Pour une meilleure lisibilité, la hauteur de ligne est 1,5 fois la taille de la police de l'élément. (<a href="https://developer.mozilla.org/fr/docs/Web/CSS/line-height" target="_blank">&gt;&gt;info</a>  )</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Utilisez l'héritage et spécifier la hauteur de ligne à utiliser dans le body.  </p>
+</details>
+<ul>
+<li>Tous les titres de niveau 1 du site seront de couleur <code>#008CBA;</code></li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Etant donné que tous les titres du site auront le même look, préférez utiliser la redefinition de balise à une classe  <a href="../../06_cssBase/selecteur/#selecteurType" target="_blank">&gt;&gt; info </a></p>
+</details>
+<ul>
+<li>Tous les titres de niveau 2 du site seront de couleur <code>#333;</code></li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Etant donné que tous les titres du site auront le même look, préférez utiliser la redefinition de balise à une classe  <a href="../../06_cssBase/selecteur/#selecteurType" target="_blank">&gt;&gt; info </a></p>
+</details>
+<ul>
+<li>Tous les bords arrondis auront une valeur de <code>0.5rem</code></li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Prévoyez une classe générique qui pourra être utilisée à chaque fois que vous avez besoin de bords arrondis.  N'oubliez pas qu'une balise html peut posséder plusieurs valeur pour l'attribut class. <a href="../../06_cssBase/selecteur/#selecteurBalise" target="_blank">&gt;&gt; info </a></p>
+</details>
+<ul>
+<li>Le titre dans le header est centré</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>On peut aligner le texte via la propriété text-align. <a href="../../06_cssBase/miseFormeTexte/#text-align" target="_blank">&gt;&gt; info </a></p>
+</details>
+<ul>
+<li>La vignette est centrée sur la page du navigateur</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>La propriété text-align ne permet pas de centrer des éléments de type bloc.  Pour centrer un élément de type bloc, vous devez lui donner une largeur et des marges latérales automatiques.
+ <a href="../centrerBloc/" target="_blank">&gt;&gt; info </a></p>
+</details>
+<ul>
+<li>La vignette a une couleur de fond <code>#f0f8ff</code></li>
+<li>La vignette possède une bordure de couleur <code>#008CBA</code></li>
+<li>La vignette comprend des bords arrondis</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Utilisez le style générique créé précédemment.</p>
+</details>
+<ul>
+<li>Le contenu n'est pas collé au bord de la vignette</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Pour espacer le contenu par rapport à la boite, utilisez des marges intérieures appelées padding.
+ <a href="../boite/#padding" target="_blank">&gt;&gt; info </a></p>
+</details>
+<ul>
+<li>Les étoiles et le nombre de commentaires sont côte à côte sur la même ligne et les puces de la liste sont masquées.</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p><strong>Positionnement des <code>&lt;li&gt;</code></strong><br>
+Les <code>&lt;li&gt;</code> sont <em>par défaut</em> des éléments de type bloc. Cela signifie qu'ils se positionnent les uns au-dessus des autres. Pour les aligner côte à côte, nous pouvons modifier leur propriété display.<a href="../display/" target="_blank">&gt;&gt; info </a></p>
+<p><strong>Masquage des Puces de Liste</strong><br>
+Pour masquer les puces de la liste, la propriété <code>list-style-type</code> peut être utilisée.
+<a href="https://developer.mozilla.org/fr/docs/Web/CSS/list-style-type" target="_blank">&gt;&gt; info </a> </p>
+<p><strong>Alignement des Étoiles et du Nombre de Votes</strong><br>
+Les étoiles sont décalées sur la droite. Utilisez l'inspecteur et vérifiez s'il n'existe pas une marge extérieure (margin) et/ou une marge intérieure (padding) par défaut.  Si oui, annulez-les. <a href="../boite/" target="_blank">&gt;&gt; info </a></p>
+<p>Le nombre de commentaire doit être aligné sur la droite.  Une idée est d'utiliser l'alignement du texte sur la droite <code>text-align:right</code> . 
+Testez-le.  Autre astuce, vous pouvez utiliser un sélecteur avancé pour cibler le dernier <code>&lt;li&gt;</code> de la liste.
+<div class="language-css highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">.</span><span class="nc">vignette</span><span class="w"> </span><span class="nt">ul</span><span class="w"> </span><span class="nt">li</span><span class="p">:</span><span class="nd">last-child</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">right</span><span class="p">;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">}</span>
+</span></code></pre></div></p>
+<p>Si vous avez appliqué cette déclaration sur le 2e <code>&lt;li&gt;</code>, vous constaterez que le texte n'est pas aligné à droite.  Utilisez l'inspecteur pour regarder l'espace occupé par les <code>&lt;li&gt;</code>. Vous constaterez que la largeur de <code>&lt;li&gt;</code> dépend du contenu.  L'alignement sur la droite est bien appliqué mais n'est pas visible pas faute de place. 
+L'idée est de donc d'attribuer une largeur aux 2 <code>&lt;li&gt;</code>.  Mais rappelez-vous, nous avons modifié le display des <code>&lt;li&gt;</code> pour qu'ils puissent se positionner côte à côte.  Ils se comportent désormais comme des élément inline et un élément inline ne peut avoir de largeur.  Nous allons donc leur demander de se comporter comme un élement inline tout en gardant les propriétés d'un élément de type bloc.<br />
+<div class="language-html highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>display: inline-block;
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>width : 50%;
+</span></code></pre></div>
+Oups, cela ne fonctionne pas... Utilisez l'inspecteur.  Vous consaterez que chaque <code>&lt;li&gt;</code> possède une largeur de 50% et que l'alignement est bien respecté. </p>
+<p>Pourquoi les éléments ne se positionnent-ils pas côte à côte alors ? <br>Toujours à l'aide de l'inspecteur, modifiez la largeur(ex : 48%).  Que constatez-vous ? </p>
+<p>Les éléments sont donc capables de se positionner côte à côte. Et par conséquent, deux élements de largeur de 50% doivent pouvoir se positionner côte à côte.</p>
+<p>Rappelez-vous : Quand les éléments sont en <code>display: inline-block</code>, des espaces indésirables apparaissent souvent entre eux. Ces espaces proviennent des espaces blancs dans le code HTML lui-même (comme des sauts de ligne ou des espaces entre les balises). Le navigateur interprète ces espaces comme des espaces entre les éléments inline, et cela crée des espaces visibles. <a href="../display/" target="_blank">&gt;&gt; info </a><br>
+Pour corriger ce problème, vous pouvez supprimer l'indentation dans le code html ou ajouter un commentaire</p>
+<div class="language-html highlight"><span class="filename">exemple</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span><span class="cm">&lt;!--</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="cm">--&gt;</span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>500 commentaires<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></code></pre></div>
+</details>
+<ul>
+<li>La vignette possède une ombre (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow" target="_blank">&gt;&gt;info</a>  )</li>
+<li>La vignette possède un bouton de réservation qui <ul>
+<li>est de couleur <code>#008CBA;</code></li>
+<li>comprend du texte blanc</li>
+<li>des bords arrondis </li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Pensez à utiliser votre classe générique</p>
+</details>
+<ul>
+<li>le texte est centré sur le bouton</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Utilisez <code>text-align: center</code></p>
+</details>
+<ul>
+<li>le texte n'est pas collé au bord du bouton </li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Utilisez des marges intérieures (padding)</p>
+</details>
+<ul>
+<li>le bouton est espacé par rapport aux éléments qui lui sont proches</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Utilisez des marges extérieures (margin).
+Oups, cela ne donne pas le rendu voulu.  Utilisez l'inspecteur.  Voyez-vous les marges haut et bas ? 
+Non ?
+Rappelez-vous, les propriétés padding vertical, margin vertical, bordures verticales (vus prochainement) seront appliquées mais ne provoqueront pas de déplacement des éléments.
+Pour palier à cela, nous allons lui modifier son display par défaut <code>display:block</code>.</p>
+</details>
+<ul>
+<li>est centré sur la largeur de la vignette</li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Comme nous avons modifié son display, la balise <code>&lt;a&gt;</code> se comporte comme une balise de type block.  Pour le centrer, il suffit de lui appliquer une largeur et des marges latérale auto.</p>
+</details>
+<ul>
+<li>quand la souris passe sur le bouton, celui-ci change de couleur <code>#005f6b;</code></li>
+</ul>
+<details class="tip">
+<summary>Astuce</summary>
+<p>Utilisez la pseudo class :hover
+<a href="https://developer.mozilla.org/fr/docs/Web/CSS/:hover">&gt;&gt;info</a></p>
+</details>
+</li>
+</ul>
+<h2 id="exe2-carte-offre-speciale">Exe2 : Carte Offre Spéciale</h2>
+<h3 id="methode_1"><strong>Méthode</strong></h3>
+<ul>
+<li>Créez un nouveau dossier nommé exeOffreSpec</li>
+<li>
+<p>Dans ce dossier, </p>
+<ul>
+<li>créez un nouveau fichier nommé <code>carteOffreSpec.html</code> </li>
+<li>copiez-collez ce code dans le fichier html</li>
+</ul>
+<details class="abstract">
+<summary>Code à copier</summary>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Carte Offre spéciale<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>        <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>            <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>            <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Offre Spéciale<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Profitez de notre tarif réduit !<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>            <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>            <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>€99<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>€49<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>            <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>            <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;avantage&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Illimité <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Support 24/7<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Garantie<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>            <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Acheter Maintenant<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>        <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>    <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
+</span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></code></pre></div>
+</details>
+<ul>
+<li>créez un nouveau dossier nommé <code>css</code></li>
+<li>dans ce dossier css, créez un nouveau fichier nommé <code>exeOffreSpec.css</code></li>
+<li>copiez-collez ce code dans la feuille css</li>
+</ul>
+<details class="abstract">
+<summary>Code à copier</summary>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">.</span><span class="nc">avantage</span><span class="w"> </span><span class="nt">li</span><span class="p">::</span><span class="nd">before</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">inline-block</span><span class="p">;</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="k">background-image</span><span class="p">:</span><span class="w"> </span><span class="nb">url</span><span class="p">(</span><span class="s2">&quot;data:image/svg+xml;utf8,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;30&#39; height=&#39;30&#39; viewBox=&#39;0 0 30 30&#39;&gt;&lt;path fill=&#39;%2306be1e&#39; d=&#39;M20 12.194v9.806h-20v-20h18.272l-1.951 2h-14.321v16h16v-5.768l2-2.038zm.904-10.027l-9.404 9.639-4.405-4.176-3.095 3.097 7.5 7.273 12.5-12.737-3.096-3.096z&#39;/&gt;&lt;/svg&gt;&quot;</span><span class="p">);</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="c">/* Taille de l&#39;icône */</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="k">background-size</span><span class="p">:</span><span class="w"> </span><span class="mf">1.875</span><span class="kt">rem</span><span class="p">;</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">    </span><span class="c">/* Largeur de l&#39;icône */</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mf">1.875</span><span class="kt">rem</span><span class="p">;</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">    </span><span class="c">/* Hauteur de l&#39;icône */</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mf">1.875</span><span class="kt">rem</span><span class="p">;</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">    </span><span class="c">/* Espace entre l&#39;icône et le texte */</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">    </span><span class="k">margin-right</span><span class="p">:</span><span class="w"> </span><span class="mf">0.625</span><span class="kt">rem</span><span class="p">;</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">    </span><span class="c">/* Alignement de l&#39;icône avec le texte */</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="w">    </span><span class="k">vertical-align</span><span class="p">:</span><span class="w"> </span><span class="kc">middle</span><span class="p">;</span>
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="p">}</span>
+</span></code></pre></div>
+<details class="tip">
+<summary>Info</summary>
+<p>Le pseudo-élément <code>::before</code> est une technique CSS permettant d'insérer du contenu virtuel avant le contenu réel d'un élément sans avoir à ajouter d'éléments HTML supplémentaires. Il est couramment utilisé pour insérer des icônes, des guillemets, des décorations, ou toute autre sorte de contenu visuel.</p>
+<p>Dans l'exemple donné :</p>
+<p><strong>Pseudo-élément ::before</strong> <br>
+Le ::before crée un pseudo-élément avant chaque élément de liste (li) de .avantage. Cela permet d'ajouter une icône avant le contenu du li.<br>
+<strong>content: ""</strong><br>
+Ce pseudo-élément n'a pas de texte, car il utilise uniquement une image en arrière-plan.<br>
+<strong>Icône en SVG</strong><br>
+background-image : Cette propriété inclut une icône SVG en tant qu’image d’arrière-plan directement intégrée dans le CSS via une URL encodée en data:image/svg+xml.</p>
+<p><a href="https://iconmonstr.com/" target="_blank">Générateur d'icône SVG</a></p>
+</details>
+</details>
+</li>
+<li>
+<p>Reproduisez l'interface en tenant compte des consignées données ci-dessous  <a href="../../img/07_cssBoite/exe_offreSpeciale.jpg" target="_blank">&gt;&gt; Voir l'interface</a>  </p>
+</li>
+</ul>
+<h3 id="contraintes_1"><strong>Contraintes</strong></h3>
+<ul>
+<li>Vous ne pouvez pas utiliser de techniques comme le flexbox, float, position absolue, position relative.</li>
+<li>
+<p>Le code html ne peut être modifié, seuls des class ou id peuvent être ajoutés</p>
+</li>
+<li>
+<p>Aucune information supplémentaire n'est fournie.  Rapprochez-vous le plus du modèle.</p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025, G.Baltus, basé sur les notes originales de F.Leclercq. Tous droits réservés.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "toc.integrate", "header.autohide"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
