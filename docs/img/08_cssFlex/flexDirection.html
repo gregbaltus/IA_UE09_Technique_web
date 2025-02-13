@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	 
+<link rel="stylesheet" href="flexExemple.css">
+</head>
+<body>
+    <div class="principal">
+        <h2>Propriétés du container flex</h2>
+        <div class="control">
+        <h4>flex-direction<small> (propriété du container flex)</small></h4><!--flex-direction: row | row-reverse | column | column-reverse;-->
+        <div class="radio">
+        <input name="flex-direction" type="radio"  class="flex-direction" id="R11" value="row" checked><label for="R11">row: <small>(Valeur par défaut)</small></label>
+        <input name="flex-direction"  type="radio" class="flex-direction" id="R12" value="row-reverse"><label for="R12">row-reverse:</label>
+        <input name="flex-direction"  type="radio" class="flex-direction" id="R13" value="column"><label for="R13">column:</label>
+        <input name="flex-direction"  type="radio" class="flex-direction" id="R14" value="column-reverse"><label for="R14">column-reverse:</label>
+        </div></div>
+        <div class="flex-container" id="direction">
+        <div class="item" data-color="2a80b9"><p>1</p></div>
+        <div class="item" data-color="8f44ad"><p>2</p></div>
+        <div class="item" data-color="16a086"><p>3</p></div>
+        <div class="item" data-color="f1c40f"><p>4</p></div>
+        <div class="item" data-color="e77e23"><p>5</p></div>
+        </div>
+        </div>
+          <footer>Sur une idée originale de Gabi, https://codepen.io/enxaneta/pen/adLPwv </footer>
+          <script src="flexExemple.js"></script>
+    
+</body>
+</html>
