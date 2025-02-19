@@ -1,6 +1,6 @@
 # Balises
 
-##Intro
+## Intro
 C'est parti pour le premier exercice.
 
 ??? quote "Exercice à réaliser"
