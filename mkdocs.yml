@@ -71,6 +71,8 @@ nav:
   - Base du JavaScript :
     - Introduction : 09_jsBase/index.md
     - Variables : 09_jsBase/variables.md
+    - Branchement : 09_jsBase/branchement.md
+    - Exercices: 09_jsBase/exercice.md
 
 theme: 
   name : material
