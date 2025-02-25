@@ -73,6 +73,12 @@ nav:
     - Variables : 09_jsBase/variables.md
     - Branchement : 09_jsBase/branchement.md
     - Exercices: 09_jsBase/exercice.md
+  - Les fonctions :
+    - Fonction : 10_jsFonction/index.md
+    - Mode sctrict : 10_jsFonction/strict.md
+    - Exception : 10_jsFonction/exceptions.md  
+    - Exercices : 10_jsFonction/exercice.md
+
 
 theme: 
   name : material
