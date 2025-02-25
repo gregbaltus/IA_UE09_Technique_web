@@ -78,6 +78,8 @@ nav:
     - Mode sctrict : 10_jsFonction/strict.md
     - Exception : 10_jsFonction/exceptions.md  
     - Exercices : 10_jsFonction/exercice.md
+  - Les tableaux : 
+    - Introduction : 11_jsTableau/index.md
 
 
 theme: 

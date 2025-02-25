@@ -3,7 +3,7 @@ Imaginez une armoire dans laquelle vous allez ranger des boites.  Votre armoire 
 
 Le principe *Flexbox* repose sur ce principe très simple : on a un conteneur qui contient des éléments.  Ceux-ci peuvent être verticaux, horizontaux, ne pas occuper tout l'espace...
 
-![Principe Flexbox](../img/08_cssFlex/flex-analogie.jpg) 
+![Principe Flexbox](../img/flex-analogie.jpg) 
 
 Si vous observez une interface web, vous pouvez la découper en **conteneurs** et **éléments enfants du conteneur**.
 
