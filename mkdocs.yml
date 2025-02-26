@@ -49,37 +49,37 @@ nav:
     - Display : 07_cssBoite/display.md
     - Place occupée : 07_cssBoite/placeOccupee.md
     - Exercices : 07_cssBoite/exercice.md
-  - Flex :
-    - Introduction : 08_cssFlex/index.md
-    - Principe : 08_cssFlex/principe.md
-    - Conteneur : 08_cssFlex/conteneur.md
-    - Conteneur Direction : 08_cssFlex/conteneurDirection.md
-    - Conteneur Wrap : 08_cssFlex/conteneurWrap.md    
-    - Conteneur Justify Content : 08_cssFlex/conteneurJustifyContent.md
-    - Conteneur Align Items : 08_cssFlex/conteneurAlignItems.md
-    - Conteneur Align Content: 08_cssFlex/conteneurAlignContent.md
-    - Enfant Flex Basis: 08_cssFlex/enfantFlexBasis.md
-    - Enfant Flex Order : 08_cssFlex/enfantFlexOrder.md
-    - Enfant Flex flex-grow : 08_cssFlex/enfantFlexGrow.md
-    - Enfant Flex flex-shrink : 08_cssFlex/enfantFlexShrink.md
-    - Enfant Flex align-self : 08_cssFlex/enfantFlexAlignSelf.md
-    - Astuces : 08_cssFlex/flexAstuces.md
-    - Je suis perdu : 08_cssFlex/jeSuisPerdu.md
-    - Memo : 08_cssFlex/memo.md
-    - Entrainement : 08_cssFlex/entrainement.md
-    - Exercices : 08_cssFlex/exercice.md
-  - Base du JavaScript :
-    - Introduction : 09_jsBase/index.md
-    - Variables : 09_jsBase/variables.md
-    - Branchement : 09_jsBase/branchement.md
-    - Exercices: 09_jsBase/exercice.md
-  - Les fonctions :
-    - Fonction : 10_jsFonction/index.md
-    - Mode sctrict : 10_jsFonction/strict.md
-    - Exception : 10_jsFonction/exceptions.md  
-    - Exercices : 10_jsFonction/exercice.md
-  - Les tableaux : 
-    - Introduction : 11_jsTableau/index.md
+  # - Flex :
+  #   - Introduction : 08_cssFlex/index.md
+  #   - Principe : 08_cssFlex/principe.md
+  #   - Conteneur : 08_cssFlex/conteneur.md
+  #   - Conteneur Direction : 08_cssFlex/conteneurDirection.md
+  #   - Conteneur Wrap : 08_cssFlex/conteneurWrap.md    
+  #   - Conteneur Justify Content : 08_cssFlex/conteneurJustifyContent.md
+  #   - Conteneur Align Items : 08_cssFlex/conteneurAlignItems.md
+  #   - Conteneur Align Content: 08_cssFlex/conteneurAlignContent.md
+  #   - Enfant Flex Basis: 08_cssFlex/enfantFlexBasis.md
+  #   - Enfant Flex Order : 08_cssFlex/enfantFlexOrder.md
+  #   - Enfant Flex flex-grow : 08_cssFlex/enfantFlexGrow.md
+  #   - Enfant Flex flex-shrink : 08_cssFlex/enfantFlexShrink.md
+  #   - Enfant Flex align-self : 08_cssFlex/enfantFlexAlignSelf.md
+  #   - Astuces : 08_cssFlex/flexAstuces.md
+  #   - Je suis perdu : 08_cssFlex/jeSuisPerdu.md
+  #   - Memo : 08_cssFlex/memo.md
+  #   - Entrainement : 08_cssFlex/entrainement.md
+  #   - Exercices : 08_cssFlex/exercice.md
+  # - Base du JavaScript :
+  #   - Introduction : 09_jsBase/index.md
+  #   - Variables : 09_jsBase/variables.md
+  #   - Branchement : 09_jsBase/branchement.md
+  #   - Exercices: 09_jsBase/exercice.md
+  # - Les fonctions :
+  #   - Fonction : 10_jsFonction/index.md
+  #   - Mode sctrict : 10_jsFonction/strict.md
+  #   - Exception : 10_jsFonction/exceptions.md  
+  #   - Exercices : 10_jsFonction/exercice.md
+  # - Les tableaux : 
+  #   - Introduction : 11_jsTableau/index.md
 
 
 theme: 
