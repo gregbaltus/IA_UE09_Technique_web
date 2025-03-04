@@ -10,28 +10,28 @@ nav:
     - L'internet: 01_HistoireWeb/internet.md
     - Le Web: 01_HistoireWeb/web.md
     - Les Risques: 01_HistoireWeb/Risque.md
-  - Base de l'HTML : 
+  - HTML-Base : 
     - Les langages du Web: 02_htmlBase/index.md
     - Les bases de l'HTML : 02_htmlBase/baseHtml.md
     - La structure global : 02_htmlBase/structure.md
     - Les codages : 02_htmlBase/codage.md
     - Les naviguateurs: 02_htmlBase/navigateur.md
-  - Balise :
+  - HTML-Balise :
     - Découverte : 03_htmlBalise/index.md
     - Balises : 03_htmlBalise/balises.md
     - Exercices : 03_htmlBalise/exercice.md
-  - Sémantique :
+  - HTML-Sémantique :
     - Évolution de l'HTML: 04_htmlSemantique/index.md
     - Web sémantique : 04_htmlSemantique/html.md
     - Balise sémantique : 04_htmlSemantique/baliseSemantique.md
     - Bonnes pratiques : 04_htmlSemantique/bonnePratique.md
     - Respect des standards : 04_htmlSemantique/validation.md
     - Exercices : 04_htmlSemantique/exercice.md
-  - Formulaire :
+  - HTML-Formulaire :
     - Introduction : 05_htmlFormulaire/index.md
     - Balises : 05_htmlFormulaire/balise.md
     - Exercices : 05_htmlFormulaire/exercice.md
-  - Base du CSS :
+  - CSS-Base :
     - Introduction : 06_cssBase/index.md
     - Héritage : 06_cssBase/heritage.md
     - Liaison : 06_cssBase/liaison.md
@@ -42,45 +42,56 @@ nav:
     - Mise en forme : 06_cssBase/miseFormeTexte.md
     - Propriété en arrière plan : 06_cssBase/arrierePlan.md
     - Exercices : 06_cssBase/exercice.md
-  - Boite : 
+  - CSS-Boite : 
     - Bloc-inline : 07_cssBoite/index.md
     - Modèle de boite : 07_cssBoite/boite.md
     - Centrer : 07_cssBoite/centrerBloc.md
     - Display : 07_cssBoite/display.md
     - Place occupée : 07_cssBoite/placeOccupee.md
     - Exercices : 07_cssBoite/exercice.md
-  # - Flex :
-  #   - Introduction : 08_cssFlex/index.md
-  #   - Principe : 08_cssFlex/principe.md
-  #   - Conteneur : 08_cssFlex/conteneur.md
-  #   - Conteneur Direction : 08_cssFlex/conteneurDirection.md
-  #   - Conteneur Wrap : 08_cssFlex/conteneurWrap.md    
-  #   - Conteneur Justify Content : 08_cssFlex/conteneurJustifyContent.md
-  #   - Conteneur Align Items : 08_cssFlex/conteneurAlignItems.md
-  #   - Conteneur Align Content: 08_cssFlex/conteneurAlignContent.md
-  #   - Enfant Flex Basis: 08_cssFlex/enfantFlexBasis.md
-  #   - Enfant Flex Order : 08_cssFlex/enfantFlexOrder.md
-  #   - Enfant Flex flex-grow : 08_cssFlex/enfantFlexGrow.md
-  #   - Enfant Flex flex-shrink : 08_cssFlex/enfantFlexShrink.md
-  #   - Enfant Flex align-self : 08_cssFlex/enfantFlexAlignSelf.md
-  #   - Astuces : 08_cssFlex/flexAstuces.md
-  #   - Je suis perdu : 08_cssFlex/jeSuisPerdu.md
-  #   - Memo : 08_cssFlex/memo.md
-  #   - Entrainement : 08_cssFlex/entrainement.md
-  #   - Exercices : 08_cssFlex/exercice.md
-  # - Base du JavaScript :
-  #   - Introduction : 09_jsBase/index.md
-  #   - Variables : 09_jsBase/variables.md
-  #   - Branchement : 09_jsBase/branchement.md
-  #   - Exercices: 09_jsBase/exercice.md
-  # - Les fonctions :
-  #   - Fonction : 10_jsFonction/index.md
-  #   - Mode sctrict : 10_jsFonction/strict.md
-  #   - Exception : 10_jsFonction/exceptions.md  
-  #   - Exercices : 10_jsFonction/exercice.md
-  # - Les tableaux : 
-  #   - Introduction : 11_jsTableau/index.md
-
+  - CSS-Flex :
+    - Introduction : 08_cssFlex/index.md
+    - Principe : 08_cssFlex/principe.md
+    - Conteneur : 08_cssFlex/conteneur.md
+    - Conteneur Direction : 08_cssFlex/conteneurDirection.md
+    - Conteneur Wrap : 08_cssFlex/conteneurWrap.md    
+    - Conteneur Justify Content : 08_cssFlex/conteneurJustifyContent.md
+    - Conteneur Align Items : 08_cssFlex/conteneurAlignItems.md
+    - Conteneur Align Content: 08_cssFlex/conteneurAlignContent.md
+    - Enfant Flex Basis: 08_cssFlex/enfantFlexBasis.md
+    - Enfant Flex Order : 08_cssFlex/enfantFlexOrder.md
+    - Enfant Flex flex-grow : 08_cssFlex/enfantFlexGrow.md
+    - Enfant Flex flex-shrink : 08_cssFlex/enfantFlexShrink.md
+    - Enfant Flex align-self : 08_cssFlex/enfantFlexAlignSelf.md
+    - Astuces : 08_cssFlex/flexAstuces.md
+    - Je suis perdu : 08_cssFlex/jeSuisPerdu.md
+    - Memo : 08_cssFlex/memo.md
+    - Entrainement : 08_cssFlex/entrainement.md
+    - Exercices : 08_cssFlex/exercice.md
+  - JS-Base :
+    - Introduction : 09_jsBase/index.md
+    - Variables : 09_jsBase/variables.md
+    - Branchement : 09_jsBase/branchement.md
+    - Exercices: 09_jsBase/exercice.md
+  - JS-Fonctions :
+    - Fonction : 10_jsFonction/index.md
+    - Mode sctrict : 10_jsFonction/strict.md
+    - Exception : 10_jsFonction/exceptions.md  
+    - Exercices : 10_jsFonction/exercice.md
+  - JS-Tableaux : 
+    - Introduction : 11_jsTableau/index.md
+    - Les objets : 11_jsTableau/objet.md
+    - Les collections : 11_jsTableau/collection.md
+    - Exercices : 11_jsTableau/exercice.md
+  - JS-DOM : 
+    - Introduction : 12_jsDOM/index.md
+    - Manipuler le DOM : 12_jsDOM/manipuler.md
+    - Les événements : 12_jsDOM/evenement.md
+    - Exercices : 12_jsDOM/exercice.md
+  - JS-Asynchrone :
+    - Introduction : 13_jsAsynchrone/index.md
+    - Promesse : 13_jsAsynchrone/promesse.md
+    - Async : 13_jsAsynchrone/asynch.md
 
 theme: 
   name : material
