@@ -224,3 +224,5 @@ console.log(fruits.size);
             console.log('Tous les élèves sont supprimés');
         }
         ```
+
+

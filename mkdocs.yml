@@ -92,6 +92,7 @@ nav:
     - Introduction : 13_jsAsynchrone/index.md
     - Promesse : 13_jsAsynchrone/promesse.md
     - Async : 13_jsAsynchrone/asynch.md
+    - Exercices : 13_jsAsynchrone/exercice.md
 
 theme: 
   name : material

@@ -13,24 +13,22 @@ En théorie, pour exécuter du code asynchrone, il faudrait plusieurs threads ca
 
 Pour des cas plus complexes nécessitant réellement plusieurs threads en JavaScript (comme des calculs intensifs), il est possible d’utiliser des Web Workers, qui permettent d’exécuter du code en arrière-plan, indépendamment du thread principal. Mais, nous n'irons pas jusque là dans ce cours.
 
+En JavaScript, certaines opérations prennent du temps avant de donner un résultat, comme :
 
-<!-- ## Historique de l'asynchrone en JS
-La fonction `setTimeout` en JavaScript permet d’exécuter une tâche après un certain délai, sans bloquer l’exécution du reste du programme. Il s'agit ici d'une méthode asynchrone (notez que même cette asynchrone utilise la technique de loop et file d'attente). Cela est utile pour programmer des actions différées, comme afficher un message après quelques secondes ou attendre avant d’effectuer une requête.
+- Récupérer des données d’une API
 
-Cependant, lorsque plusieurs actions asynchrones doivent être enchaînées, l’utilisation répétée de setTimeout avec des fonctions imbriquées crée un code difficile à lire et à maintenir. C’est ce qu’on appelle l’enfer des callbacks : le code devient enchevêtré, complexe et difficile à déboguer, car chaque fonction dépend du bon fonctionnement de la précédente.
+- Lire un fichier
 
-Pour résoudre ce problème, JavaScript introduit les `promesses`, qui permettent de gérer plus proprement l’exécution asynchrone. Une promesse représente une opération qui peut être en attente, réussie ou échouée. Au lieu de s’imbriquer, les actions s’enchaînent de manière plus fluide, rendant le code plus lisible et structuré. 
+- Attendre une réponse d’un serveur
 
-!!! Tip "Ce qu'il faut retenir"
-    Une promesse en JavaScript représente une opération asynchrone qui peut aboutir à un résultat (`resolve`) ou échouer (`reject`), permettant de gérer l'exécution différée de manière structurée.
-
- Plus tard, la syntaxe `async`/`await` a été ajoutée pour simplifier encore davantage l’écriture et la gestion du code asynchrone. Bien qu'il est toujours possible de faire du code JS asynchrone des `promesses`, nous allons nous concentrer sur utilisation des `async`/`await`, sans rentrer trop dans les détails des `promesses`. -->
+Si on exécute ces tâches de manière synchronisée, JavaScript va bloquer l’exécution du reste du programme en attendant la fin de l’opération.
+Solution : JavaScript permet d’exécuter ces tâches de façon asynchrone, sans bloquer le reste du code.
 
 ## setTimeout
 
 Javascript possède plusieurs fonctions asynchrone, la plus connue d'entre-elles est la fonction `setTimeout(fct, ms)`. Celle-ci va exécuter une fonction après un certains délai exprimé en millisecondes.
 
-Essayer [ce code](https://codepen.io/Gregory-Baltus/pen/ZYEeNPV). 
+Essayez [ce code](https://codepen.io/Gregory-Baltus/pen/ZYEeNPV). 
 
 ```javascript
 function afficherMessage() {
@@ -42,7 +40,7 @@ function afficherMessage() {
 ```
 Ce code définit une fonction `afficherMessage()`, quand elle est appellée, elle fait apparaître un premier texte et puis lancer un `setTimeout`. Ce dernier appelle une autre fonction qui va changer le texte du message, mais cette fonction ne va s'excécuter que 3 secondes (3000 millisecondes) après l'appui sur le bouton.
 
-Essayer ensuite [cette version](https://codepen.io/Gregory-Baltus/pen/VYwpoZQ).
+Essayez ensuite [cette version](https://codepen.io/Gregory-Baltus/pen/VYwpoZQ).
 
 ```javascript
 function afficherMessage(){
@@ -63,3 +61,7 @@ function afficherMessage2(){
 ```
 
 Dans cette exemple, malgré que la fonction `afficherMessage` appelle en premier lieux la fonction `afficherMessage1`, le code n'attends pas qu'elle soit terminée (que "Temps écoulé !" soit affiché) pour lancer la seconde fonction `afficherMessage2`.
+
+## Gestion des erreurs
+
+Pour gérer les erreurs, il est courant d'utiliser des fonctions nommées callbacks. Un callback est une fonction passée en argument à une autre fonction pour être exécutée plus tard, souvent en réponse à un événement ou après une opération asynchrone. Les callbacks sont couramment utilisés dans les fonctions comme setTimeout. Ils permettent d'exécuter du code une fois qu'une tâche est terminée, mais peuvent rendre le code difficile à lire lorsqu'ils sont imbriqués (c'est ce qu'on appelle le callback hell). Aujourd’hui, les promesses et async/await sont préférés pour simplifier la gestion du code asynchrone. C'est pourquoi, nous n'allons pas rentrer dans les détails de ces callbacks ici. 
