@@ -143,3 +143,14 @@ body{
 .explanation{
     margin-bottom: 1rem;
 }
+
+
+/**********mettre à la ligne la navigation************/
+.md-tabs {
+    flex-wrap: wrap;
+    white-space: normal;
+  }
+  
+  .md-tabs__list {
+    flex-wrap: wrap;
+  }
