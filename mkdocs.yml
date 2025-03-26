@@ -93,10 +93,16 @@ nav:
     - Promesse : 13_jsAsynchrone/promesse.md
     - Async : 13_jsAsynchrone/asynch.md
     - Exercices : 13_jsAsynchrone/exercice.md
-  - NodeJS-Base:
+  - NodeJS-Express:
     - Introduction : 14_NodeBase/index.md
     - Installation : 14_NodeBase/installation.md
     - Express : 14_NodeBase/express.md
+    - Tuto mini-site : 14_NodeBase/tuto.md
+    - Exercices : 14_NodeBase/exercice.md
+  - NodeJS-Formulaire :
+    - Introduction : 15_NodeFormulaire/index.md
+    - Récupération : 15_NodeFormulaire/recuperation.md
+
 
 theme: 
   name : material
