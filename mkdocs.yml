@@ -87,6 +87,7 @@ nav:
     - Introduction : 12_jsDOM/index.md
     - Manipuler le DOM : 12_jsDOM/manipuler.md
     - Les événements : 12_jsDOM/evenement.md
+    - Exemple : 12_jsDOM/exemple.md
     - Exercices : 12_jsDOM/exercice.md
   - JS-Asynchrone :
     - Introduction : 13_jsAsynchrone/index.md
@@ -102,6 +103,18 @@ nav:
   - NodeJS-Formulaire :
     - Introduction : 15_NodeFormulaire/index.md
     - Récupération : 15_NodeFormulaire/recuperation.md
+    - Tuto : 15_NodeFormulaire/tuto.md
+    - Exercices : 15_NodeFormulaire/exercice.md
+  - NodeJS-BD :
+    - Introduction : 16_NodeBD/index.md
+    - SQLite : 16_NodeBD/sqlite.md
+    - Repository : 16_NodeBD/repository.md
+    - AJAX : 16_NodeBD/ajax.md
+    - Lire des données : 16_NodeBD/lireDonnees.md
+    - Sauvegarder des données : 16_NodeBD/sauvegarderDonnees.md
+    - Tuto : 16_NodeBD/tuto.md
+    - Exercices : 16_NodeBD/exercice.md
+    
 
 
 theme: 

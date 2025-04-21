@@ -208,8 +208,9 @@ Ce script est à mettre dans le frontend et non pas dans le fichier backend (ser
 
 - Pas sécurisé pour des informations sensibles
 
+D'autres méthodes sont possibles pour outre-passer ces limites, comme l'utilisation de **AJAX**, néanmoins il s'agit là de fonctionnalité plus avancée que nous ne verrons pas dans le cadre de ce cours.
 
-Nous verrons dans le cours suivant comment lever ces limitations en utilisant **AJAX**, qui permet d’échanger des données plus librement entre client et serveur.
+<!-- Nous verrons dans le cours suivant comment lever ces limitations en utilisant **AJAX**, qui permet d’échanger des données plus librement entre client et serveur.
 
 ###  Envoyer une réponse au format JSON
 
@@ -219,7 +220,51 @@ Lorsque l’on construit une API, il est courant de répondre avec du JSON, que 
 res.json({ message: "Données reçues", success: true });
 ```
 
-Cela n’est **pas encore utile dans notre cours actuel**, mais ce sera essentiel dès que nous utiliserons **AJAX**.
+Cela n’est **pas encore utile dans notre cours actuel**, mais ce sera essentiel dès que nous utiliserons **AJAX**. -->
 
 
+## 2.5 Lire les informations dans l’URL côté client
+
+Il peut arriver que le **serveur veuille transmettre une information** à une page HTML, sans passer par AJAX ou stockage local.  
+Une méthode simple consiste à **ajouter des paramètres dans l’URL** (par exemple après une redirection), et à les lire ensuite **côté client avec JavaScript**.
+
+### Exemple d’URL avec paramètres :
+
+```url
+http://localhost:3000/resultat.html?user=John&id=123
+```
+Cette URL contient l'adresse de la page html à affiché `resultat.html` et également deux paramètres `user` dont la valeur est `John` et l'`id` dont la valeur est `123`. À partir de cette URL il est possible de récupérer ces paramètres en utilisant simplement un code JS côté client (c'est-à-dire sans utiliser node.js)
+
+### Code JS pour lire ces paramètres
+
+```js
+const urlParams = new URLSearchParams(window.location.search);
+const user = urlParams.get("user");  // 'John'
+const id = urlParams.get("id");      // '123'
+
+console.log(user, id);
+```
+
+### Explication
+
+- window.location.search récupère la partie de l’URL après le ? (appelée query string)
+
+- URLSearchParams permet d’analyser cette partie et d’accéder facilement aux différentes valeurs envoyées
+
+- Vous pouvez ensuite utiliser ces valeurs pour personnaliser l’affichage de la page
+
+### À quoi ça sert ?
+Cela peut être un moyen simple pour le serveur d’envoyer une information au frontend, sans recharger de données ni utiliser de base de données.
+Par exemple :
+
+- Afficher un message personnalisé (Bonjour John !)
+
+- Charger un élément en fonction d’un ID
+
+- Adapter le contenu ou l’apparence de la page
+
+!!! Tip "Attetntion"
+    Attention : les données envoyées dans l’URL sont visibles par tout le monde.
+    Ce n’est pas une méthode sécurisée, et elle a des limitations (taille, confidentialité…).
+    Une façon plus sécurisée de faire serait, par exemple, d'utiliser AJAX.
 
