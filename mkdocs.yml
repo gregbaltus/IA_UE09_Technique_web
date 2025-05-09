@@ -114,6 +114,12 @@ nav:
     - Sauvegarder des données : 16_NodeBD/sauvegarderDonnees.md
     - Tuto : 16_NodeBD/tuto.md
     - Exercices : 16_NodeBD/exercice.md
+  - NodeJS-API :
+    - Introduction : 17_NodeAPI/index.md
+    - API simple : 17_NodeAPI/apiSimple.md
+    - HuggingFace : 17_NodeAPI/huggingFace.md
+    - Tuto chatbot : 17_NodeAPI/tutoChatbot.md
+    - Exrercices : 17_NodeAPI/exercice.md
     
 
 
