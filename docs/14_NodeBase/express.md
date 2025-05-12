@@ -4,7 +4,7 @@
 
 Dans la partie précédente, nous avons créé un serveur Node.js **sans outil externe**, en utilisant uniquement les fonctionnalités de base fournies par Node.js.
 
-C’est une très bonne façon de comprendre ce qui se passe **"sous le capot"**, mais tu as peut-être remarqué que cela demande pas mal d'efforts, même pour un petit projet :  
+C’est une très bonne façon de comprendre ce qui se passe **"sous le capot"**, mais vous avez peut-être remarqué que cela demande pas mal d'efforts, même pour un petit projet :  
 - Il faut gérer manuellement les chemins vers les fichiers ;
 - Déterminer le type de contenu à envoyer (HTML, CSS, JSON…) ;
 - Lire les fichiers à la main avec `fs.readFile` ;
@@ -143,7 +143,7 @@ app.get("/contact", (req, res) => {
 });
 ```
 
-### 📬 Et les requêtes POST ?
+### Et les requêtes POST ?
 
 Jusqu'ici, nous avons utilisé `app.get()` pour répondre à des requêtes **GET** (souvent utilisées pour afficher des pages ou récupérer des informations).  
 Mais il existe aussi un autre type très courant de requête : la **requête POST**.
