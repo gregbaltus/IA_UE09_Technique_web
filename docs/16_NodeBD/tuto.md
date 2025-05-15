@@ -223,6 +223,11 @@ const userRepo = new UserRepository();
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
+// Lors de l'écoute on écoute vers liste.html au lieu de index.html
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/public/liste.html');
+  });
+
 // API - Récupération de tous les utilisateurs
 app.get("/api/users", (req, res) => {
   userRepo.getAllUsers((err, users) => {
