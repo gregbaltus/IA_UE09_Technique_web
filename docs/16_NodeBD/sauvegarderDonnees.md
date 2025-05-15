@@ -42,7 +42,7 @@ L'attribut `method="POST"` indique qu’il s’agit d’un envoi de données.
 ```js
 app.use(express.json()); // Middleware pour lire le JSON dans le corps de la requête
 
-app.post("/api/users", (req, res) => {
+app.post("/ajouter-user", (req, res) => {
   const { nom, email } = req.body;
 
   if (!nom || !email) {
