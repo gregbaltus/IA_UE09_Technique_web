@@ -83,6 +83,9 @@ app.listen(PORT, () => {
 });
 ```
 
+!!! Tip "import"
+    Il est important de noter la différence dans les `import`. Nous n'utilisons plus le `require` comme nous le faisions avant. Quand on travaille avec des API, on va utiliser des `module` ceux-ci demande que l'on utilise des `import` plutôt que des `require`.
+
 
 ### `public/index.html` et `public/css/style.css`
 
@@ -260,6 +263,8 @@ app.listen(PORT, () => {
   console.log(`Serveur lancé sur http://localhost:${PORT}`);
 });
 ```
+
+
 
 ### Explication du fetch dans server.js
 Dans ce fichier, on utilise fetch dans le backend (avec node-fetch) pour appeler l’API https://api.adviceslip.com.

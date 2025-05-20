@@ -107,6 +107,13 @@ Ce fichier sert à lancer un petit serveur Express pour :
 </html>
 ```
 
+!!! Tip "type="module""
+    Il est important de remarquer ici que l'on doit ajouter un argument à la balise `script` : 
+    ```html
+    <script type="module" src="js/script.js" defer></script>
+    ```
+    L’attribut `type="module"` est nécessaire lorsque vous utilisez `import` dans un fichier JavaScript (comme avec `@gradio/client`). Cela indique au navigateur qu’il s’agit d’un **module ES6**, permettant l’utilisation d’`import`/`export`.
+
 ```css
 body {
   font-family: Arial, sans-serif;
