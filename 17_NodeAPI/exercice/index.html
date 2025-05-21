@@ -3554,17 +3554,26 @@
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#le-type-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le type : module
+    </span>
+  </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#changer-aussi-moduleexports" class="md-nav__link">
     <span class="md-ellipsis">
       Changer aussi module.exports
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3688,16 +3697,30 @@ Après (ES module) :
 <div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">fetch</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;node-fetch&quot;</span><span class="p">;</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">import</span><span class="w"> </span><span class="nx">express</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;express&quot;</span><span class="p">;</span>
 </span></code></pre></div>
-N’oubliez pas d’ajouter "type": "module" dans votre package.json.</p>
-<h3 id="changer-aussi-moduleexports">Changer aussi module.exports</h3>
+Exemple pour <code>sqlite3</code>
+Avant :
+<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">sqlite3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s2">&quot;sqlite3&quot;</span><span class="p">).</span><span class="nx">verbose</span><span class="p">();</span>
+</span></code></pre></div>
+Après :
+<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">sqlite3pkg</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;sqlite3&quot;</span><span class="p">;</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">sqlite3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">sqlite3pkg</span><span class="p">.</span><span class="nx">verbose</span><span class="p">();</span>
+</span></code></pre></div></p>
+<h4 id="le-type-module">Le type : module</h4>
+<p>N’oubliez pas d’ajouter "type": "module" dans votre package.json :
+<div class="language-json highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nt">&quot;type&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;module&quot;</span>
+</span></code></pre></div>
+De plus, le lien vers le script qui appellera l'API devra contenir <code>type="module"</code> :
+<div class="language-html highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a> <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;module&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/script_ajout.js&quot;</span> <span class="na">defer</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<h4 id="changer-aussi-moduleexports">Changer aussi module.exports</h4>
 <p>Si vous utilisez un fichier comme <code>articleRepository.js</code> et qu’il contient :
-<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">ArticleRepository</span><span class="p">;</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">ArticleRepository</span><span class="p">;</span>
 </span></code></pre></div>
 Vous devez remplacer cette ligne par la version <code>ES module</code> :
-<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">ArticleRepository</span><span class="p">;</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">ArticleRepository</span><span class="p">;</span>
 </span></code></pre></div>
 Et dans les fichiers où vous l’utilisez :
-<div class="language-js highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">ArticleRepository</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./repository/articleRepository.js&quot;</span><span class="p">;</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">ArticleRepository</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./repository/articleRepository.js&quot;</span><span class="p">;</span>
 </span></code></pre></div>
 Cela permet de garder une structure moderne et compatible avec tous les outils que nous utilisons (comme fetch, @gradio/client, etc.).</p>
 </div>
