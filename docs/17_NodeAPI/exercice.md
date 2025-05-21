@@ -82,8 +82,27 @@ Vous devez obtenir un site où l’on peut :
     import fetch from "node-fetch";
     import express from "express";
     ```
-    N’oubliez pas d’ajouter "type": "module" dans votre package.json.
-    ### Changer aussi module.exports
+    Exemple pour `sqlite3`
+    Avant :
+    ```js
+    const sqlite3 = require("sqlite3").verbose();
+    ```
+    Après :
+    ```js
+    import sqlite3pkg from "sqlite3";
+    const sqlite3 = sqlite3pkg.verbose();
+    ```
+
+    #### Le type : module
+    N’oubliez pas d’ajouter "type": "module" dans votre package.json :
+    ```json
+    "type" : "module"
+    ```
+    De plus, le lien vers le script qui appellera l'API devra contenir `type="module"` :
+    ```html
+     <script type="module" src="js/script_ajout.js" defer></script>
+    ```
+    #### Changer aussi module.exports
     Si vous utilisez un fichier comme `articleRepository.js` et qu’il contient :
     ```js
     module.exports = ArticleRepository;
