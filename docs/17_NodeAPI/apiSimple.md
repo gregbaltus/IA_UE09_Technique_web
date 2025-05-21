@@ -264,6 +264,12 @@ app.listen(PORT, () => {
 });
 ```
 
+!!! Tip "Installer node-fetch"
+    On utilise le package `node-fetch`, il faut donc l'installer avec la commande suivante :
+    ```bash
+    npm install node-fetch
+    ```
+
 
 
 ### Explication du fetch dans server.js
