@@ -40,8 +40,11 @@
           // For now your Worker ignores the body and just replies "hello world!"
           const resp = await fetch(WORKER_URL, {
             method: "POST",
-            credentials: "include",
-            headers: { "Content-Type": "application/json" }, 
+            headers: { 
+                "Content-Type": "application/json",
+                "X-CLASS-TOKEN": "8cnAegHjwbtPYVYyk8Fl5yuYFVMqGb",
+
+            }, 
             body: JSON.stringify({ message: text }),
           });
           const reply = await resp.text();
