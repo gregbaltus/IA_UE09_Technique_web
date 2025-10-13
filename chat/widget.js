@@ -1,7 +1,7 @@
 // docs/chat/widget.js
 (() => {
-    //const WORKER_URL = "https://iatechniqueweb.greg-baltus.workers.dev";
-    const WORKER_URL = "https://api.gbaltus-ue09.be"
+    const WORKER_URL = "https://iatechniqueweb.greg-baltus.workers.dev";
+    //const WORKER_URL = "https://api.gbaltus-ue09.be"
   
     // Wait for the DOM and bail out if the widget isn't on this page
     document.addEventListener("DOMContentLoaded", () => {
@@ -41,7 +41,7 @@
           const resp = await fetch(WORKER_URL, {
             method: "POST",
             credentials: "include",
-            headers: { "Content-Type": "text/plain" },
+            headers: { "Content-Type": "application/json" }, 
             body: JSON.stringify({ message: text }),
           });
           const reply = await resp.text();
