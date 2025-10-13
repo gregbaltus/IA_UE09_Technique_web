@@ -41,7 +41,7 @@
           const resp = await fetch(WORKER_URL, {
             method: "POST",
             credentials: "include",
-            headers: { "Content-Type": "application/json" },
+            headers: { "Content-Type": "text/plain" },
             body: JSON.stringify({ message: text }),
           });
           const reply = await resp.text();
