@@ -1,0 +1,54 @@
+#chat-log {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px;
+    height: 300px;              /* fixed height for the chat area */
+    max-width: 720px;
+    margin: 0 auto 8px;
+    overflow-y: auto;           /* enable vertical scroll */
+    background: #fff;
+    scroll-behavior: smooth;    /* nice smooth scroll when new messages appear */
+  }
+  
+  .msg {
+    margin: 6px 0;
+  }
+  
+  .msg .bubble {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 12px;
+    background: #f6f6f6;
+    max-width: 80%;            /* so messages don't span full width */
+    word-wrap: break-word;
+  }
+  
+  .msg.user {
+    text-align: right;
+  }
+  
+  .msg.user .bubble {
+    background: #eef5ff;
+  }
+  
+  #chat-form {
+    display: flex;
+    gap: 8px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  
+  #chat-input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  #chat-form button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+  }
+  
