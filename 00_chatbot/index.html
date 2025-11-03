@@ -3781,11 +3781,33 @@
 <h1 id="chatbot-test">Chatbot Test</h1>
 <p>This is a first test to integrate the chat widget into MkDocs...</p>
 <div id="chat-root">
-    <div id="chat-log"></div>
-    <form id="chat-form">
-      <input id="chat-input" type="text" placeholder="Ask me anything…" autocomplete="off" />
-      <button type="submit">Send</button>
-    </form>
+  <!-- Identity bar -->
+  <form id="identity-form" novalidate>
+    <label for="student-email" class="label">HELMo email</label>
+    <div class="identity-row">
+      <input
+        id="student-email"
+        type="email"
+        inputmode="email"
+        placeholder="prenom.nom@student.helmo.be"
+        required
+        pattern="^[^@\\s]+@(helmo\\.be|student\\.helmo\\.be)$"
+        aria-describedby="email-hint"
+      />
+      <button type="button" id="save-email">Save</button>
+    </div>
+    <small id="email-hint" class="hint">Only <code>@helmo.be</code> or <code>@student.helmo.be</code> accepted.</small>
+    <div id="email-status" class="status" aria-live="polite"></div>
+  </form>
+
+  <!-- Chat area -->
+  <div id="chat-log"></div>
+
+  <!-- Chat input -->
+  <form id="chat-form">
+    <input id="chat-input" type="text" placeholder="Ask me anything…" autocomplete="off" />
+    <button type="submit">Send</button>
+  </form>
 </div>
 
 

@@ -1,54 +1,116 @@
+/* Identity bar */
+#identity-form {
+  max-width: 720px;
+  margin: 0 auto 12px;
+  padding: 10px 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+#identity-form .label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.identity-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#student-email {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font: inherit;
+}
+
+#save-email {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  background: #fff;
+  cursor: pointer;
+}
+
+#identity-form .hint {
+  display: block;
+  margin-top: 6px;
+  color: #666;
+}
+
+.status {
+  margin-top: 6px;
+  min-height: 1em; /* reserve space */
+  font-size: 0.9rem;
+}
+
+#student-email:invalid:not(:placeholder-shown) {
+  border-color: #e24a4a;
+  background: #fff5f5;
+}
+
+#student-email:valid {
+  border-color: #3aa85b;
+  background: #f5fff8;
+}
+
+/* Chat log */
 #chat-log {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 8px;
-    height: 300px;              /* fixed height for the chat area */
-    max-width: 720px;
-    margin: 0 auto 8px;
-    overflow-y: auto;           /* enable vertical scroll */
-    background: #fff;
-    scroll-behavior: smooth;    /* nice smooth scroll when new messages appear */
-  }
-  
-  .msg {
-    margin: 6px 0;
-  }
-  
-  .msg .bubble {
-    display: inline-block;
-    padding: 6px 10px;
-    border-radius: 12px;
-    background: #f6f6f6;
-    max-width: 80%;            /* so messages don't span full width */
-    word-wrap: break-word;
-  }
-  
-  .msg.user {
-    text-align: right;
-  }
-  
-  .msg.user .bubble {
-    background: #eef5ff;
-  }
-  
-  #chat-form {
-    display: flex;
-    gap: 8px;
-    max-width: 720px;
-    margin: 0 auto;
-  }
-  
-  #chat-input {
-    flex: 1;
-    padding: 8px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-  }
-  
-  #chat-form button {
-    padding: 8px 12px;
-    border-radius: 8px;
-    border: 1px solid #aaa;
-    cursor: pointer;
-  }
-  
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  height: 300px;              /* fixed height for the chat area */
+  max-width: 720px;
+  margin: 0 auto 8px;
+  overflow-y: auto;           /* enable vertical scroll */
+  background: #fff;
+  scroll-behavior: smooth;    /* smooth scroll when new messages appear */
+}
+
+/* Messages */
+.msg { margin: 6px 0; }
+
+.msg .bubble {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 12px;
+  background: #f6f6f6;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.msg.user { text-align: right; }
+.msg.user .bubble { background: #eef5ff; }
+
+/* Chat input */
+#chat-form {
+  display: flex;
+  gap: 8px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+#chat-input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#chat-form button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+
+/* Responsive tweak */
+@media (max-width: 560px) {
+  .identity-row { flex-direction: column; align-items: stretch; }
+  #save-email { width: 100%; }
+}
