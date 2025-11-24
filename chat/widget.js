@@ -16,14 +16,14 @@
     if (!rootEl) return;
 
     // identity elements
-    const emailInput = document.getElementById("student-email");
+    const emailInput   = document.getElementById("student-email");
     const saveEmailBtn = document.getElementById("save-email");
-    const emailStatus = document.getElementById("email-status");
+    const emailStatus  = document.getElementById("email-status");
 
     // chat elements
-    const logEl  = document.getElementById("chat-log");
-    const formEl = document.getElementById("chat-form");
-    const inputEl = document.getElementById("chat-input");
+    const logEl   = document.getElementById("chat-log");
+    const formEl  = document.getElementById("chat-form");
+    const inputEl = document.getElementById("chat-input"); // textarea now
     const sendBtn = formEl?.querySelector("button");
 
     if (!logEl || !formEl || !inputEl || !emailInput || !saveEmailBtn) return;
@@ -33,10 +33,10 @@
     if (saved) {
       emailInput.value = saved;
       emailStatus.textContent = `Saved: ${saved}`;
-      emailInput.classList.add("ok");
+      emailStatus.style.color = "#2e7d32";
     }
 
-    function validEmail(v) { return EMAIL_RE.test((v || "").trim()); }
+    const validEmail = (v) => EMAIL_RE.test((v || "").trim());
 
     saveEmailBtn.addEventListener("click", () => {
       const email = emailInput.value.trim().toLowerCase();
@@ -50,12 +50,37 @@
       emailStatus.style.color = "#2e7d32";
     });
 
+    // Auto-grow the textarea
+    function autoGrow(el) {
+      el.style.height = "auto";
+      el.style.height = Math.min(el.scrollHeight, 400) + "px"; // cap ~10rem
+    }
+    inputEl.addEventListener("input", () => autoGrow(inputEl));
+    autoGrow(inputEl);
+
+    // Enter to send, Shift+Enter for newline
+    inputEl.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        formEl.requestSubmit();
+      }
+    });
+
     function addMessage(role, text) {
       const wrap = document.createElement("div");
       wrap.className = `msg ${role}`;
       const bubble = document.createElement("div");
       bubble.className = "bubble";
-      bubble.textContent = text;
+
+      if (role === "bot" && window.marked) {
+        // Render Markdown if available
+        window.marked.setOptions({ mangle: false, headerIds: false, breaks: true });
+        bubble.innerHTML = window.marked.parse(text);
+      } else {
+        // Preserve newlines for user/fallback
+        bubble.textContent = text;
+      }
+
       wrap.appendChild(bubble);
       logEl.appendChild(wrap);
       logEl.scrollTop = logEl.scrollHeight;
@@ -70,7 +95,7 @@
       wrap.appendChild(bubble);
       logEl.appendChild(wrap);
       logEl.scrollTop = logEl.scrollHeight;
-      return wrap; // so we can remove it later
+      return wrap; // to remove later
     }
 
     formEl.addEventListener("submit", async (e) => {
@@ -89,11 +114,11 @@
 
       addMessage("user", text);
       inputEl.value = "";
+      autoGrow(inputEl);
       inputEl.focus();
 
       if (sendBtn) sendBtn.disabled = true;
 
-      // 🟡 Show “thinking…” indicator
       const thinkingEl = showThinking();
 
       try {
@@ -113,7 +138,6 @@
 
         const replyText = await resp.text();
 
-        // 🟢 Remove the “thinking…” message
         if (thinkingEl) thinkingEl.remove();
 
         if (!resp.ok) {
@@ -123,7 +147,7 @@
         }
       } catch (err) {
         console.error(err);
-        if (thinkingEl) thinkingEl.remove(); // remove it even on error
+        if (thinkingEl) thinkingEl.remove();
         addMessage("bot", "Network error.");
       } finally {
         if (sendBtn) sendBtn.disabled = false;
