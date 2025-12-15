@@ -1,0 +1,206 @@
+/* Centered page width inside MkDocs content */
+#chat-root {
+  max-width: 200rem;   /* 3560px */
+  margin: 0 0;
+  padding: 0.5rem 0 1rem;
+}
+
+/* === Two-column layout (history left, identity right) === */
+#chat-root.two-col {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 16rem; /* 360px */
+  gap: 1rem;
+  align-items: start;
+  margin-left: -12rem; /* -300px */
+}
+
+/* Left column contains log + input, stacked */
+.chat-left {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 0.5rem;
+}
+
+/* Right column contains the identity form */
+.chat-right {
+  position: relative;
+}
+
+/* Make the identity box follow while you scroll the page (nice DX) */
+.chat-right #identity-form {
+  position: sticky;
+  top: 0.75rem; /* 12px */
+}
+
+/* Hide page H1 on this page (optional) */
+.md-content__inner h1:first-of-type { display: none; }
+
+/* ---------- Identity (email) styles ---------- */
+#identity-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem; /* 6px */
+  padding: 0.625rem 0.75rem; /* 10px 12px */
+  border: 0.0625rem solid #e5e5e5; /* 1px */
+  background: #fafafa;
+  border-radius: 0.625rem; /* 10px */
+}
+
+#identity-form .label {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.identity-row {
+  display: flex;
+  gap: 0.5rem; /* 8px */
+  align-items: center;
+}
+
+#student-email {
+  flex: 0 0 5rem;
+  height: 2rem; /* 32px */
+  padding: 0.25rem 0.5rem; /* 4px 8px */
+  border: 0.0625rem solid #ccc; /* 1px */
+  border-radius: 0.5rem; /* 8px */
+  font: inherit;
+}
+
+#save-email {
+  height: 2rem; /* 32px */
+  padding: 0 0.75rem; /* 0 12px */
+  border: 0.0625rem solid #aaa; /* 1px */
+  border-radius: 0.5rem; /* 8px */
+  background: #fff;
+  cursor: pointer;
+}
+
+#identity-form .hint {
+  color: #666;
+}
+
+.status {
+  min-height: 1em;
+  font-size: 0.9rem;
+  color: #2e7d32;
+}
+
+#student-email:invalid:not(:placeholder-shown) {
+  border-color: #e24a4a;
+  background: #fff5f5;
+}
+#student-email:valid {
+  border-color: #3aa85b;
+  background: #f5fff8;
+}
+
+/* ---------- Chat history ---------- */
+#chat-log {
+  border: 0.0625rem solid #ddd; /* 1px */
+  border-radius: 0.5rem; /* 8px */
+  padding: 0.5rem 0.625rem; /* 8px 10px */
+  background: #fff;
+
+  height: min(65vh, calc(100vh - 16.25rem)); /* 260px */
+  margin: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scroll-behavior: smooth;
+}
+
+.msg { margin: 0.375rem 0; /* 6px */ }
+.msg .bubble {
+  display: inline-block;
+  padding: 0.5rem 0.75rem; /* 8px 12px */
+  border-radius: 0.75rem; /* 12px */
+  background: #f6f6f6;
+  max-width: 80%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.msg.user { text-align: right; }
+.msg.user .bubble { background: #eef5ff; }
+
+.msg.thinking .bubble {
+  font-style: italic;
+  opacity: 0.8;
+  animation: pulse 1.4s ease-in-out infinite;
+}
+@keyframes pulse { 0%{opacity:.5} 50%{opacity:1} 100%{opacity:.5} }
+
+/* ---------- Input row ---------- */
+:root{
+  --control-h: 2.5rem;          /* one place to change the height */
+}
+
+#chat-form{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+  align-items: center;           /* vertically center both controls */
+}
+
+#chat-input,
+#chat-form button{
+  box-sizing: border-box;        /* count padding in the height */
+  font: inherit;
+  line-height: 1.2;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #ccc;
+}
+
+/* textarea */
+#chat-input{
+  min-height: var(--control-h);  /* same visual height as button */
+  max-height: 10rem;
+  overflow: auto;
+  resize: vertical;
+  padding: 0.625rem 0.75rem;
+}
+
+/* send button */
+#chat-form button{
+  height: var(--control-h);      /* exact same height */
+  padding: 0 0.875rem;           /* horizontal padding only */
+  border-color: #aaa;            /* keep your button border color */
+  cursor: pointer;
+}
+
+
+/* ---------- Responsive: collapse to one column ---------- */
+@media (max-width: 56.25rem) { /* 900px */
+  #chat-root.two-col {
+    grid-template-columns: 1fr;
+  }
+  .chat-right {
+    order: -1;
+  }
+  #chat-log {
+    height: 50vh;
+  }
+}
+
+/* ---------- (Optional) fullscreen rules ---------- */
+#chat-root.chat-fullscreen {
+  position: fixed;
+  --chat-top: 4rem;      /* 64px */
+  --chat-bottom: 5.25rem;/* 84px */
+  top: var(--chat-top);
+  left: 0;
+  right: 0;
+  bottom: var(--chat-bottom);
+  width: min(75rem, 96vw); /* 1200px */
+  margin: 0 auto;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 0 0.75rem;
+  overflow: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  background: var(--md-default-bg-color, transparent);
+}
+#chat-root.chat-fullscreen #identity-form { position: static; margin: 0; }
+#chat-root.chat-fullscreen #chat-log { flex: 1 1 auto; min-height: 12.5rem; overflow-y: auto; } /* 200px */
+#chat-root.chat-fullscreen #chat-form { flex: 0 0 auto; }

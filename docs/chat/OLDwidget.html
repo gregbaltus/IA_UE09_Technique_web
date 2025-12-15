@@ -1,31 +1,24 @@
-<!-- Chat center column -->
-<div id="chat-root" class="chat-center">
-    <!-- History -->
+<div id="chat-root" class="two-col">
+  <!-- LEFT: history + input -->
+  <div class="chat-left">
     <div id="chat-log"></div>
-  
-    <!-- Input -->
+
     <form id="chat-form">
       <textarea id="chat-input" placeholder="Pose ta question…" autocomplete="off"></textarea>
       <button type="submit">Envoyer</button>
     </form>
   </div>
-  
-  <!-- Fixed email panel on the right -->
-  <aside id="identity-flyout">
+
+  <!-- RIGHT: email -->
+  <aside class="chat-right">
     <form id="identity-form" novalidate>
       <span class="label">HELMo email</span>
       <div class="identity-row">
         <input id="student-email" type="email" placeholder="prenom.nom@helmo.be" required />
+        <button id="save-email" type="button">Save</button>
       </div>
-      <button id="save-email" type="button">Save</button>
-      <small class="hint">Only <code>@student.helmo.be</code> accepted.</small>
+      <small class="hint">Only <code>@helmo.be</code> or <code>@student.helmo.be</code> accepted.</small>
       <div id="email-status" class="status"></div>
     </form>
   </aside>
-  
-  <!-- (Optional) Markdown rendering for bot replies -->
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  
-    
-
-  
+</div>  

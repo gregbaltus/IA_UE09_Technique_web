@@ -1,149 +1,185 @@
-/* Identity bar */
-#identity-form {
-  max-width: 720px;
-  margin: 0 auto 12px;
-  padding: 10px 12px;
-  border: 1px solid #e5e5e5;
-  border-radius: 10px;
-  background: #fafafa;
+/* Hide the page title on this page (optional) */
+.md-content__inner h1:first-of-type { display: none; }
+
+/* ---- Center column (history + input) ---- */
+#chat-root {
+  max-width: 90rem;               /* ~960px center column */
+  margin-inline: auto;
+  padding: 0rem 0 1rem;
 }
 
-#identity-form .label {
-  display: block;
-  font-size: 0.9rem;
-  margin-bottom: 6px;
-  color: #333;
-}
-
-.identity-row {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
-#student-email {
-  flex: 1;
-  padding: 8px 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font: inherit;
-}
-
-#save-email {
-  padding: 8px 12px;
-  border-radius: 8px;
-  border: 1px solid #aaa;
-  background: #fff;
-  cursor: pointer;
-}
-
-#identity-form .hint {
-  display: block;
-  margin-top: 6px;
-  color: #666;
-}
-
-.status {
-  margin-top: 6px;
-  min-height: 1em; /* reserve space */
-  font-size: 0.9rem;
-}
-
-#student-email:invalid:not(:placeholder-shown) {
-  border-color: #e24a4a;
-  background: #fff5f5;
-}
-
-#student-email:valid {
-  border-color: #3aa85b;
-  background: #f5fff8;
-}
-
-/* Chat log */
+/* History */
 #chat-log {
   border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 8px;
-  height: 300px;              /* fixed height for the chat area */
-  max-width: 720px;
-  margin: 0 auto 8px;
-  overflow-y: auto;           /* enable vertical scroll */
+  border-radius: 0.5rem;          /* 8px */
+  padding: 0.5rem 0.625rem;       /* 8px 10px */
   background: #fff;
-  scroll-behavior: smooth;    /* smooth scroll when new messages appear */
+  height: min(65vh, calc(100vh - 12.25rem));  /* 260px */
+  margin: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scroll-behavior: smooth;
 }
 
 /* Messages */
-.msg { margin: 6px 0; }
-
+.msg { margin: 0.375rem 0; }      /* 6px */
 .msg .bubble {
   display: inline-block;
-  padding: 6px 10px;
-  border-radius: 12px;
+  padding: 0.5rem 0.75rem;        /* 8px 12px */
+  border-radius: 0.75rem;         /* 12px */
   background: #f6f6f6;
   max-width: 80%;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
-
 .msg.user { text-align: right; }
 .msg.user .bubble { background: #eef5ff; }
-
-/* Chat input */
-#chat-form {
-  display: flex;
-  gap: 8px;
-  max-width: 720px;
-  margin: 0 auto;
-  align-items: flex-start;
-}
-
-#chat-input {
-  flex: 1;
-  min-height: 2rem;
-  max-height: 8rem;
-  overflow: auto;
-  resize: vertical;              /* user can resize if they want */
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font: inherit;
-}
-
-#chat-form button {
-  padding: 8px 12px;
-  height: fit-content;
-  margin-top: 4px;
-  border-radius: 8px;
-  border: 1px solid #aaa;
-  cursor: pointer;
-}
-
-/* Nicer code blocks in replies */
-.msg .bubble pre, .msg .bubble code {
-  background: #f6f8fa;
-  border-radius: 6px;
-  padding: 2px 6px;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-}
-.msg .bubble pre {
-  padding: 10px;
-  overflow: auto;
-}
-
-/* Responsive tweak */
-@media (max-width: 560px) {
-  .identity-row { flex-direction: column; align-items: stretch; }
-  #save-email { width: 100%; }
-}
 
 .msg.thinking .bubble {
   font-style: italic;
   opacity: 0.8;
   animation: pulse 1.4s ease-in-out infinite;
 }
+@keyframes pulse { 0%{opacity:.5} 50%{opacity:1} 100%{opacity:.5} }
 
-@keyframes pulse {
-  0% { opacity: 0.5; }
-  50% { opacity: 1; }
-  100% { opacity: 0.5; }
+/* Input row (textarea + button) */
+:root { --control-h: 2.5rem; }    /* Shared height for input and button */
+
+#chat-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+#chat-input,
+#chat-form button {
+  box-sizing: border-box;
+  font: inherit;
+  line-height: 1.2;
+  border-radius: 0.5rem;          /* 8px */
+  border: 1px solid #ccc;
+}
+
+#chat-input {
+  min-height: var(--control-h);
+  max-height: 10rem;
+  overflow: auto;
+  resize: vertical;
+  padding: 0.625rem 0.75rem;      /* 10px 12px */
+}
+
+#chat-form button {
+  height: var(--control-h);
+  padding: 0 0.875rem;            /* 14px horizontal */
+  border-color: #aaa;
+  cursor: pointer;
+}
+
+/* Code formatting inside replies */
+.msg .bubble pre, .msg .bubble code {
+  background: #f6f8fa;
+  border-radius: 0.375rem;        /* 6px */
+  padding: 0.125rem 0.375rem;     /* 2px 6px */
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+.msg .bubble pre {
+  padding: 0.625rem;              /* 10px */
+  overflow: auto;
+}
+
+/* ---- Fixed email panel on the right (desktop) ---- */
+:root { --fly-top: 12rem; }      /* adjust if your header is taller/shorter */
+
+#identity-flyout {
+  /* Default: not fixed; will be fixed on large screens */
+}
+
+#identity-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;                   /* 6px */
+  padding: 0.625rem 0.75rem;       /* 10px 12px */
+  border: 1px solid #e5e5e5;
+  background: #fafafa;
+  border-radius: 0.625rem;         /* 10px */
+}
+
+#identity-form .label {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.identity-row {
+  display: flex;
+  gap: 0.5rem;                     /* 8px */
+  align-items: center;
+}
+
+#student-email {
+  flex: 0 0 4rem;
+  height: 2rem;                    /* 32px */
+  padding: 0.25rem 0.5rem;         /* 4px 8px */
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;           /* 8px */
+  font: inherit;
+}
+
+#save-email {
+  height: 1.4rem;                   /* 32px */
+  padding: 0 0.4rem;              /* 12px */
+  border: 1px solid #aaa;
+  border-radius: 0.4rem;           /* 8px */
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+
+html.page--chatbot .md-sidebar--primary,
+html.page--chatbot .md-sidebar--secondary { display: none !important; }
+
+html.page--chatbot .md-main__inner { grid-template-columns: 1fr !important; }
+html.page--chatbot .md-content { margin-left: 0 !important; max-width: 100% !important; }
+
+
+
+#identity-form .hint { color: #666; }
+.status { min-height: 1em; font-size: 0.9rem; color: #2e7d32; }
+
+#student-email:invalid:not(:placeholder-shown) { border-color: #e24a4a; background: #fff5f5; }
+#student-email:valid { border-color: #3aa85b; background: #f5fff8; }
+
+/* Fix the email panel on wide screens */
+@media (min-width: 75rem) {        /* 1200px */
+  #identity-flyout {
+    position: fixed;
+    right: 0.2rem;                   /* keep this <20px for precision */
+    top: var(--fly-top);
+    width: 12rem;                  /* email panel width */
+    z-index: 40;
+    max-height: calc(100vh - var(--fly-top) - 1rem);
+    overflow: auto;
+    box-shadow: 0 10px 24px rgba(0,0,0,.08);
+  }
+}
+
+/* Optional: reserve space so the panel never overlaps the center.
+   Add class 'reserve-flyout' to <body> if you want this behavior. */
+.reserve-flyout #chat-root {
+  margin-right: 24rem;             /* 22rem panel + gap */
+}
+
+/* Small screens: email box goes back above the chat, full width */
+@media (max-width: 74.99rem) {
+  #identity-flyout {
+    position: static;
+    width: auto;
+    box-shadow: none;
+    max-height: none;
+    overflow: visible;
+    margin-bottom: 0.5rem;
+  }
 }

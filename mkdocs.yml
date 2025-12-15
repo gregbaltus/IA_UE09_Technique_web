@@ -164,6 +164,7 @@ extra_css:
 
 extra_javascript:
   - chat/widget.js
+  - assets/chatbot-flag.js
 
 # Extensions
 markdown_extensions:
