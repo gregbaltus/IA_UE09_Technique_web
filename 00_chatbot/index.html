@@ -3779,38 +3779,32 @@
 
 
 <h1 id="chatbot-test">Chatbot Test</h1>
-<p>This is a first test to integrate the chat widget into MkDocs...</p>
-<div id="chat-root">
-  <!-- Identity bar -->
-  <form id="identity-form" novalidate>
-    <label for="student-email" class="label">HELMo email</label>
-    <div class="identity-row">
-      <input
-        id="student-email"
-        type="email"
-        inputmode="email"
-        placeholder="prenom.nom@student.helmo.be"
-        required
-        pattern="^[^@\\s]+@(helmo\\.be|student\\.helmo\\.be)$"
-        aria-describedby="email-hint"
-      />
-      <button type="button" id="save-email">Save</button>
-    </div>
-    <small id="email-hint" class="hint">Only <code>@helmo.be</code> or <code>@student.helmo.be</code> accepted.</small>
-    <div id="email-status" class="status" aria-live="polite"></div>
-  </form>
+<!-- Chat center column -->
+<div id="chat-root" class="chat-center">
+    <!-- History -->
+    <div id="chat-log"></div>
 
-  <!-- Chat area -->
-  <div id="chat-log"></div>
+    <!-- Input -->
+    <form id="chat-form">
+      <textarea id="chat-input" placeholder="Pose ta question…" autocomplete="off"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
 
-  <!-- Chat input -->
-  <form id="chat-form">
-    <textarea id="chat-input" rows="2"
-    placeholder="Pose ta question…"
-    autocomplete="off"></textarea>
-  <button type="submit">Envoyer</button>
-  </form>
-</div>
+<!-- Fixed email panel on the right -->
+<aside id="identity-flyout">
+    <form id="identity-form" novalidate>
+      <span class="label">HELMo email</span>
+      <div class="identity-row">
+        <input id="student-email" type="email" placeholder="prenom.nom@helmo.be" required />
+      </div>
+      <button id="save-email" type="button">Save</button>
+      <small class="hint">Only <code>@student.helmo.be</code> accepted.</small>
+      <div id="email-status" class="status"></div>
+    </form>
+  </aside>
+
+<!-- (Optional) Markdown rendering for bot replies -->
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
 
@@ -3870,6 +3864,8 @@
       <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
         <script src="../chat/widget.js"></script>
+      
+        <script src="../assets/chatbot-flag.js"></script>
       
     
   </body>
