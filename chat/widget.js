@@ -66,19 +66,60 @@
       }
     });
 
+
+
+
+    // --- NEW: cleanup of rendered HTML to remove empty gaps ---
+    function cleanRenderedHtml(containerEl) {
+      // Remove empty paragraphs
+      containerEl.querySelectorAll("p").forEach((p) => {
+        const txt = (p.textContent || "").replace(/\u00a0/g, " ").trim(); // nbsp -> space
+        const hasMeaningfulChild =
+          p.querySelectorAll("img, video, audio, table, pre, code, ul, ol, blockquote").length > 0;
+
+        if (!txt && !hasMeaningfulChild) {
+          p.remove();
+        }
+      });
+
+      // Remove empty list items (<li></li>)
+      containerEl.querySelectorAll("li").forEach((li) => {
+        const txt = (li.textContent || "").replace(/\u00a0/g, " ").trim();
+        const hasMeaningfulChild =
+          li.querySelectorAll("ul, ol, pre, code, table, blockquote, img").length > 0;
+
+        if (!txt && !hasMeaningfulChild) {
+          li.remove();
+        }
+      });
+
+      // Remove lists that became empty
+      containerEl.querySelectorAll("ul, ol").forEach((list) => {
+        if (list.children.length === 0) list.remove();
+      });
+    }
+
+
+
     function addMessage(role, text) {
       const wrap = document.createElement("div");
       wrap.className = `msg ${role}`;
+
       const bubble = document.createElement("div");
       bubble.className = "bubble";
 
       if (role === "bot" && window.marked) {
-        // Render Markdown if available
         window.marked.setOptions({ mangle: false, headerIds: false, breaks: true });
-        bubble.innerHTML = window.marked.parse(text);
+
+        const html = window.marked.parse(text || "");
+        const safe = window.DOMPurify ? window.DOMPurify.sanitize(html) : html;
+
+        bubble.innerHTML = safe;
+
+        // ✅ Clean empty <li> / <p> that create big gaps
+        cleanRenderedHtml(bubble);
       } else {
-        // Preserve newlines for user/fallback
-        bubble.textContent = text;
+        bubble.textContent = text || "";
       }
 
       wrap.appendChild(bubble);
