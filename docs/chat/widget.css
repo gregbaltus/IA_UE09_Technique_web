@@ -29,9 +29,18 @@
   border-radius: 0.75rem;         /* 12px */
   background: #f6f6f6;
   max-width: 80%;
-  white-space: pre-wrap;
   word-wrap: break-word;
 }
+
+.msg.user .bubble {
+  white-space: pre-wrap;
+}
+
+/* Bot message: let HTML/Markdown control layout */
+.msg.bot .bubble {
+  white-space: normal;
+}
+
 .msg.user { text-align: right; }
 .msg.user .bubble { background: #eef5ff; }
 
@@ -152,6 +161,68 @@ html.page--chatbot .md-content { margin-left: 0 !important; max-width: 100% !imp
 #student-email:invalid:not(:placeholder-shown) { border-color: #e24a4a; background: #fff5f5; }
 #student-email:valid { border-color: #3aa85b; background: #f5fff8; }
 
+
+
+/***** Adjustments to chatbot message formatting *****/
+
+/* Tighten vertical spacing inside chatbot replies */
+.msg.bot .bubble p {
+  margin: 0.4em 0;
+}
+
+.msg.bot .bubble ul,
+.msg.bot .bubble ol {
+  margin: 0.4em 0 0.4em 1.2em;
+  padding: 0;
+}
+
+.msg.bot .bubble li {
+  margin: 0.2em 0;
+}
+
+/* Reduce space before/after headings */
+.msg.bot .bubble h1,
+.msg.bot .bubble h2,
+.msg.bot .bubble h3,
+.msg.bot .bubble h4 {
+  margin-top: 0.8em;
+  margin-bottom: 0.3em;
+}
+
+/* Reduce gap between paragraph and list */
+.msg.bot .bubble p + ul,
+.msg.bot .bubble p + ol {
+  margin-top: 0.2em;
+}
+
+
+
+
+/* Make spacing consistent (override md-typeset defaults inside the chat only) */
+html.page--chatbot #chat-log .msg.bot .bubble :is(p, ul, ol, pre, blockquote, table, hr) {
+  margin-top: 0.45em;
+  margin-bottom: 0.45em;
+}
+
+/* Headings tighter */
+html.page--chatbot #chat-log .msg.bot .bubble :is(h1,h2,h3,h4) {
+  margin: 0.8em 0 0.35em;
+}
+
+/* Lists tighter */
+html.page--chatbot #chat-log .msg.bot .bubble :is(ul,ol) {
+  padding-left: 1.2em;
+}
+html.page--chatbot #chat-log .msg.bot .bubble li {
+  margin: 0.15em 0;
+}
+
+
+
+
+
+/***** Fixed email panel on the right (desktop) *****/
+
 /* Fix the email panel on wide screens */
 @media (min-width: 75rem) {        /* 1200px */
   #identity-flyout {
@@ -183,3 +254,5 @@ html.page--chatbot .md-content { margin-left: 0 !important; max-width: 100% !imp
     margin-bottom: 0.5rem;
   }
 }
+
+
