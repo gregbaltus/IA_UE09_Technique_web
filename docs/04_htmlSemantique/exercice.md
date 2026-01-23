@@ -1,4 +1,4 @@
-#Exercices
+#Exercices)
 
 ##Exercice 1 
 Analysez ce visuel.  Quelles sont les balises sémantiques de structuration que vous allez utiliser ?

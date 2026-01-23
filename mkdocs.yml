@@ -5,7 +5,7 @@ copyright: Copyright &copy; 2025, G.Baltus, basé sur les notes originales de F.
 
 nav:
   - Acceuil: index.md
-  - EU09: 00_UE09/index.md
+  - UE09: 00_UE09/index.md
   - Historique du web: 
     - Bref historique: 01_HistoireWeb/index.md
     - L'internet: 01_HistoireWeb/internet.md
@@ -20,18 +20,18 @@ nav:
   - HTML-Balise :
     - Découverte : 03_htmlBalise/index.md
     - Balises : 03_htmlBalise/balises.md
-    - Exercices : 03_htmlBalise/exercice.md
+    - Exercices (labo) : 03_htmlBalise/exercice.md
   - HTML-Sémantique :
     - Évolution de l'HTML: 04_htmlSemantique/index.md
     - Web sémantique : 04_htmlSemantique/html.md
     - Balise sémantique : 04_htmlSemantique/baliseSemantique.md
     - Bonnes pratiques : 04_htmlSemantique/bonnePratique.md
     - Respect des standards : 04_htmlSemantique/validation.md
-    - Exercices : 04_htmlSemantique/exercice.md
-  - HTML-Formulaire :
-    - Introduction : 05_htmlFormulaire/index.md
-    - Balises : 05_htmlFormulaire/balise.md
-    - Exercices : 05_htmlFormulaire/exercice.md
+    - Exercices (labo) : 04_htmlSemantique/exercice.md
+#  - HTML-Formulaire :
+#    - Introduction : 05_htmlFormulaire/index.md
+#    - Balises : 05_htmlFormulaire/balise.md
+#    - Exercices (labo) : 05_htmlFormulaire/exercice.md
   - CSS-Base :
     - Introduction : 06_cssBase/index.md
     - Héritage : 06_cssBase/heritage.md
@@ -42,14 +42,14 @@ nav:
     - S'enrtainer : 06_cssBase/entrainement.md
     - Mise en forme : 06_cssBase/miseFormeTexte.md
     - Propriété en arrière plan : 06_cssBase/arrierePlan.md
-    - Exercices : 06_cssBase/exercice.md
+    - Exercices (labo) : 06_cssBase/exercice.md
   - CSS-Boite : 
     - Bloc-inline : 07_cssBoite/index.md
     - Modèle de boite : 07_cssBoite/boite.md
     - Centrer : 07_cssBoite/centrerBloc.md
     - Display : 07_cssBoite/display.md
     - Place occupée : 07_cssBoite/placeOccupee.md
-    - Exercices : 07_cssBoite/exercice.md
+    - Exercices (labo) : 07_cssBoite/exercice.md
   - CSS-Flex :
     - Introduction : 08_cssFlex/index.md
     - Principe : 08_cssFlex/principe.md
@@ -68,44 +68,44 @@ nav:
     - Je suis perdu : 08_cssFlex/jeSuisPerdu.md
     - Memo : 08_cssFlex/memo.md
     - Entrainement : 08_cssFlex/entrainement.md
-    - Exercices : 08_cssFlex/exercice.md
+    - Exercices (labo) : 08_cssFlex/exercice.md
   - JS-Base :
     - Introduction : 09_jsBase/index.md
     - Variables : 09_jsBase/variables.md
     - Branchement : 09_jsBase/branchement.md
-    - Exercices: 09_jsBase/exercice.md
+    - Exercices (labo): 09_jsBase/exercice.md
   - JS-Fonctions :
     - Fonction : 10_jsFonction/index.md
     - Mode sctrict : 10_jsFonction/strict.md
     - Exception : 10_jsFonction/exceptions.md  
-    - Exercices : 10_jsFonction/exercice.md
+    - Exercices (labo) : 10_jsFonction/exercice.md
   - JS-Tableaux : 
     - Introduction : 11_jsTableau/index.md
     - Les objets : 11_jsTableau/objet.md
     - Les collections : 11_jsTableau/collection.md
-    - Exercices : 11_jsTableau/exercice.md
+    - Exercices (labo) : 11_jsTableau/exercice.md
   - JS-DOM : 
     - Introduction : 12_jsDOM/index.md
     - Manipuler le DOM : 12_jsDOM/manipuler.md
     - Les événements : 12_jsDOM/evenement.md
     - Exemple : 12_jsDOM/exemple.md
-    - Exercices : 12_jsDOM/exercice.md
+    - Exercices (labo) : 12_jsDOM/exercice.md
   - JS-Asynchrone :
     - Introduction : 13_jsAsynchrone/index.md
     - Promesse : 13_jsAsynchrone/promesse.md
     - Async : 13_jsAsynchrone/asynch.md
-    - Exercices : 13_jsAsynchrone/exercice.md
+    - Exercices (labo): 13_jsAsynchrone/exercice.md
   - NodeJS-Express:
     - Introduction : 14_NodeBase/index.md
     - Installation : 14_NodeBase/installation.md
     - Express : 14_NodeBase/express.md
     - Tuto mini-site : 14_NodeBase/tuto.md
-    - Exercices : 14_NodeBase/exercice.md
+    - Exercices (labo) : 14_NodeBase/exercice.md
   - NodeJS-Formulaire :
     - Introduction : 15_NodeFormulaire/index.md
     - Récupération : 15_NodeFormulaire/recuperation.md
     - Tuto : 15_NodeFormulaire/tuto.md
-    - Exercices : 15_NodeFormulaire/exercice.md
+    - Exercices (labo) : 15_NodeFormulaire/exercice.md
   - NodeJS-BD :
     - Introduction : 16_NodeBD/index.md
     - SQLite : 16_NodeBD/sqlite.md
@@ -114,14 +114,14 @@ nav:
     - Lire des données : 16_NodeBD/lireDonnees.md
     - Sauvegarder des données : 16_NodeBD/sauvegarderDonnees.md
     - Tuto : 16_NodeBD/tuto.md
-    - Exercices : 16_NodeBD/exercice.md
+    - Exercices (labo) : 16_NodeBD/exercice.md
   - NodeJS-API :
     - Introduction : 17_NodeAPI/index.md
     - API simple : 17_NodeAPI/apiSimple.md
     - HuggingFace : 17_NodeAPI/huggingFace.md
     - Tuto chatbot : 17_NodeAPI/tutoChatbot.md
-    - Exrercices : 17_NodeAPI/exercice.md
-    
+    - Exrercices (labo) : 17_NodeAPI/exercice.md
+  - Ressource-Chatbot : 00_chatbot/index.md
 
 
 theme: 
