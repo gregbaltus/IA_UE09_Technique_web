@@ -125,11 +125,17 @@ Exemple avec une énumération de données.
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ### Liste non ordonnée
-<iframe height="200" style="width: 100%;" scrolling="no" title="Html : liste non ordonnée" src="https://codepen.io/Flolec/embed/wvLwQyN?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/Flolec/pen/wvLwQyN">
-  Html : liste non ordonnée</a> by Flolec (<a href="https://codepen.io/Flolec">@Flolec</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
+<p class="codepen"
+   data-height="200"
+   data-default-tab="html,result"
+   data-slug-hash="wvLwQyN"
+   data-user="Flolec"
+   style="height: 200px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>
+    See the Pen <a href="https://codepen.io/Flolec/pen/wvLwQyN">Html : liste non ordonnée</a>
+    by Flolec (<a href="https://codepen.io/Flolec">@Flolec</a>) on <a href="https://codepen.io">CodePen</a>.
+  </span>
+</p>
 
 ### Listes imbriquées
 <iframe height="300" style="width: 100%;" scrolling="no" title="Html : liste non ordonnée" src="https://codepen.io/Flolec/embed/NWZKEYV?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
