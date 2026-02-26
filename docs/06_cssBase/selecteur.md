@@ -81,7 +81,7 @@ strong{
 }
 ```
 
-Le sélecteur de balise cible tous les éléments d’un type spécifique.  Dans l'exemple donné, tous les textes de toutes les balises `<br>` seront de couleur orange. Il n’est pas très précis car il applique le même style à tous les éléments de ce type sur la page, sans distinction. Pour des styles plus ciblés, on utilise des sélecteurs de classe ou d’identifiant.
+Le sélecteur de balise cible tous les éléments d’un type spécifique.  Dans l'exemple donné, tous les textes de toutes les balises `<strong>` seront de couleur orange. Il n’est pas très précis car il applique le même style à tous les éléments de ce type sur la page, sans distinction. Pour des styles plus ciblés, on utilise des sélecteurs de classe ou d’identifiant.
 
 ##Sélecteur de class<a name="selecteurClass"></a>
 
