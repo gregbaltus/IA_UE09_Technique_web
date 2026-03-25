@@ -135,3 +135,38 @@ btnChangeColor.addEventListener("click", () => {
 - Le bouton "Cacher la phrase" la supprime.
 
 - Le bouton "Changer la couleur" modifie la couleur de la phrase.
+
+
+### Exercice :
+
+Modifiez ce code pour que l’élément `phrase` soit directement présent dans le code HTML :
+
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple Sélecteurs JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Manipulation DOM simple</h1>
+
+    <div id="button-container">
+        <button id="btnShow">Afficher la phrase</button>
+        <button id="btnHide">Cacher la phrase</button>
+        <button id="btnChangeColor">Changer la couleur</button>
+    </div>
+
+    <div id="phrase-container">
+        <p id="phrase" class="phrase-style"> Bonjour, ceci est une phrase magique ! </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
+La fonction supprimerPhrase ne doit désormais plus réellement supprimer l’élément, mais simplement le cacher.
+Utilisez par exemple display: none en CSS.
+
+La fonction afficherPhrase devra donc, naturellement, le rendre à nouveau visible, en utilisant par exemple display: block.

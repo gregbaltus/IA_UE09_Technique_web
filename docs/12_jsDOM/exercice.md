@@ -1,6 +1,21 @@
 # Exercices
 
-## Exercice js.dom1
+## Exercice 1 : compteur
+Sur base des fichiers fournis dans l'archive "[ExerciceCounter.zip](../img/12_jsDOM/ExerciceCounter.zip)", créez le script.js pour que le bouton "+" incrémente le compteur, le bouton "-" le décrémente et le bouton "Reset" le remette à zéro.
+
+## Exercice 2 : liste dynamique
+Sur base des fichiers fournis dans l'archive "[ExerciceGenerateListe.zip](../img/12_jsDOM/ExerciceGenerateListe.zip)", adaptez le script.js pour que la liste de fruits présente dans le tableau soit affichée dynamiquement dans la page au chargement (utilisez un forEach).
+
+## Exercice 3 : sélection de carte
+Sur base des fichiers fournis dans l'archive "[ExerciceSelectCard.zip](../img/12_jsDOM/ExerciceSelectCard.zip)", créez le script.js pour qu'un clic sur une carte la sélectionne (une ombre autour de la carte doit apparaître). Un second clic sur la même carte la désélectionne (l'ombre disparait).
+
+## Exercice 4 : ajouter un bouton qui supprime l'élément
+Sur base des fichiers fournis dans l'archive "[ExerciceDeleteOnItem.zip](../img/12_jsDOM/ExerciceDeleteOnItem.zip)", créez le script.js pour qu'un bouton "Supprimer" soit ajouté à chaque élément de la liste. En cliquant dessus, l'élément correspondant disparaît de la page.
+
+## Exercice 5 : plusieurs tris
+Sur base des fichiers fournis dans l'archive "[ExerciceSortList.zip](../img/12_jsDOM/ExerciceSortList.zip)", créez le script.js pour que les boutons trient la liste : par nom (ordre alphabétique), par rang et par prix (ordre croissant).
+
+## Exercice 6 : BMR
 Le BMR (Basal Metabolic Rate, en français Taux Métabolique de Base - TMB) représente la quantité minimale d'énergie (exprimée en kilocalories par jour) dont le corps a besoin pour fonctionner au repos.
 
 Le BMR dépend de plusieurs facteurs :
@@ -27,7 +42,7 @@ Sur base du fichier HTML fournies dans l'archive "[BMR.zip](../img/12_jsDOM/BMR.
 **Astuce** : pour récupérer [les valeurs d'un champs input](https://www.w3schools.com/jsref/prop_text_value.asp).
 
 
-## Exercice js.dom2
+## Exercice 7 : fantasy
 
 Sur base du fichier HTML et des images fournies dans l'archive "[fantasy.zip](../img/12_jsDOM/fantasy.zip)", réalisez la visualisation d'un album photo avec les fonctionnalités suivantes:
 
