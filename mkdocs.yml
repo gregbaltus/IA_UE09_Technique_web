@@ -28,10 +28,10 @@ nav:
     - Bonnes pratiques : 04_htmlSemantique/bonnePratique.md
     - Respect des standards : 04_htmlSemantique/validation.md
     - Exercices (labo) : 04_htmlSemantique/exercice.md
-#  - HTML-Formulaire :
-#    - Introduction : 05_htmlFormulaire/index.md
-#    - Balises : 05_htmlFormulaire/balise.md
-#    - Exercices (labo) : 05_htmlFormulaire/exercice.md
+  # - HTML-Formulaire :
+  #   - Introduction : 05_htmlFormulaire/index.md
+  #   - Balises : 05_htmlFormulaire/balise.md
+  #   - Exercices (labo) : 05_htmlFormulaire/exercice.md
   - CSS-Base :
     - Introduction : 06_cssBase/index.md
     - Héritage : 06_cssBase/heritage.md
@@ -102,7 +102,9 @@ nav:
     - Tuto mini-site : 14_NodeBase/tuto.md
     - Exercices (labo) : 14_NodeBase/exercice.md
   - NodeJS-Formulaire :
-    - Introduction : 15_NodeFormulaire/index.md
+    - Formulaire HTML : 05_htmlFormulaire/index.md
+    - Balises HTML: 05_htmlFormulaire/balise.md
+    - Introduction nodeJS: 15_NodeFormulaire/index.md
     - Récupération : 15_NodeFormulaire/recuperation.md
     - Tuto : 15_NodeFormulaire/tuto.md
     - Exercices (labo) : 15_NodeFormulaire/exercice.md
