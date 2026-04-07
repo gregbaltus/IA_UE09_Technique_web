@@ -11,6 +11,10 @@
         <link rel="canonical" href="https://gbaltus-ue09.be/05_htmlFormulaire/">
       
       
+        <link rel="prev" href="../14_NodeBase/exercice/">
+      
+      
+        <link rel="next" href="balise/">
       
       
       <link rel="icon" href="../img/helmoDots.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Index - IA-UE09-Techniques Web</title>
+        <title>Formulaire HTML - IA-UE09-Techniques Web</title>
       
     
     
@@ -109,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Index
+              Formulaire HTML
             
           </span>
         </div>
@@ -478,11 +482,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../15_NodeFormulaire/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -2943,26 +2949,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" checked>
         
           
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
             
   
   
@@ -2975,12 +2986,114 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_15">
             <span class="md-nav__icon md-icon"></span>
             NodeJS-Formulaire
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Formulaire HTML
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Formulaire HTML
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-introductive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vidéo introductive
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="balise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Balises HTML
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -2994,7 +3107,7 @@
   
   
   <span class="md-ellipsis">
-    Introduction
+    Introduction nodeJS
     
   </span>
   
@@ -3521,7 +3634,8 @@
 <h2 id="introduction">Introduction</h2>
 <p>Les formulaires sont nécessaires afin de récolter des informations auprès des utilisateurs d'un site web. Les formulaires sont utilisés pour la création de comptes utilisateurs, pour l'authentification, pour répondre à un questionnaire, pour effectuer des achats, ...</p>
 <p>Dans ce chapitre, nous allons nous concentrer uniquement sur la conception d'un formulaire et non de son traitement. En effet, lors de la soumission (l'envoi des données) d'un formulaire, celles-ci sont envoyées par requête HTTP vers une adresse précise sur le serveur. Sur celui-ci, un programme va recevoir ces données, les vérifier, effectuer le traitement (calcul, sauvegarde en base de données, ...) et renvoyer le résultat du traitement par réponse HTTP. Sans langage de programmation côté serveur, il est impossible de traiter les données soumises par un formulaire.</p>
-<p>Quand nous verrons Node.js nous pourrons rendre nos formulaires pleinement fonctionnels.</p>
+<!-- Quand nous verrons Node.js nous pourrons rendre nos formulaires pleinement fonctionnels. -->
+
 <h1 id="video-introductive"><img alt="Lecture à domicile" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABFCAYAAAD3upAqAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAydpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMS1jMDAxIDc5LjE0NjI4OTk3NzcsIDIwMjMvMDYvMjUtMjM6NTc6MTQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyNS4zIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyREY5OTcyNjc4MDYxMUVGQkM0OEI0MEQzQjU3ODBBNSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyREY5OTcyNzc4MDYxMUVGQkM0OEI0MEQzQjU3ODBBNSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjJERjk5NzI0NzgwNjExRUZCQzQ4QjQwRDNCNTc4MEE1IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJERjk5NzI1NzgwNjExRUZCQzQ4QjQwRDNCNTc4MEE1Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+bfuPFQAAFzFJREFUeNrs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" /> Vidéo introductive</h1>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6TNdOH88myk?si=NGHOfB1-AdDvSoPL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
