@@ -108,7 +108,7 @@ nav:
     - Récupération : 15_NodeFormulaire/recuperation.md
     - Tuto : 15_NodeFormulaire/tuto.md
     - Exercices (labo) : 15_NodeFormulaire/exercice.md
-  - NodeJS-BD :
+  - NodeJS-BD (BONUS) :
     - Introduction : 16_NodeBD/index.md
     - SQLite : 16_NodeBD/sqlite.md
     - Repository : 16_NodeBD/repository.md
@@ -119,6 +119,7 @@ nav:
     - Exercices (labo) : 16_NodeBD/exercice.md
   - NodeJS-API :
     - Introduction : 17_NodeAPI/index.md
+    - AJAX : 17_NodeAPI/ajax.md
     - API simple : 17_NodeAPI/apiSimple.md
     - HuggingFace : 17_NodeAPI/huggingFace.md
     - Tuto chatbot : 17_NodeAPI/tutoChatbot.md

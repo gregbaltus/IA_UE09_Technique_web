@@ -149,7 +149,7 @@ Dans ce fichier `advice.js`, nous utilisons fetch pour envoyer une requête HTTP
 - Le texte est ensuite affiché dans la page.
 
 ### Rappel AJAX
-Dans les séances précédentes (cours sur les bases de données), nous avions déjà utilisé fetch pour communiquer avec notre propre backend Express, par exemple pour :
+Dans les exemples du point précédent (AJAX), nous avions déjà utilisé fetch pour communiquer avec notre propre backend Express, par exemple pour :
 
 ```js
 fetch("/api/users")

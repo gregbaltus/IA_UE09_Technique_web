@@ -4,14 +4,12 @@
 
 Dans ce tutoriel, nous allons construire un **mini site web de type chatbot** qui envoie des messages à un modèle d’intelligence artificielle hébergé sur Hugging Face et reçoit des réponses automatiquement.
 
-Nous utiliserons le modèle [`deepseek-ai/Janus-Pro-7B`](https://huggingface.co/spaces/deepseek-ai/Janus-Pro-7B), un modèle multimodal capable de répondre à des questions basées sur du texte et des images.
-
-Pour ce projet, nous utiliserons uniquement le texte, comme le modèle à besoin d'une image pour fonctionner, nous lui en donnerons une en dur dans le code, mais nous ne l'utiliserons pas directement.
+Nous utiliserons le modèle [`hysts/mistral-7b`](https://huggingface.co/spaces/hysts/mistral-7b), un modèle capable de répondre à des questions basées sur du texte.
 
 
 ### Structure du projet
 ```php-template
-chatbot-janus/
+chatbot/
 ├── public/
 │ ├── index.html
 │ └── css/
@@ -28,7 +26,7 @@ Voici un fichier `package.json` minimal :
 
 ```json
 {
-  "name": "chatbot-janus",
+  "name": "chatbot",
   "type": "module",
   "main": "server.js",
   "dependencies": {
@@ -89,7 +87,7 @@ Ce fichier sert à lancer un petit serveur Express pour :
 </head>
 <body>
   <header>
-    <h1>Chatbot IA (Janus)</h1>
+    <h1>Chatbot IA</h1>
   </header>
 
   <main>
@@ -101,7 +99,7 @@ Ce fichier sert à lancer un petit serveur Express pour :
   </main>
 
   <footer>
-    <p>Propulsé par Hugging Face – Janus-Pro-7B</p>
+    <p>Propulsé par Hugging Face</p>
   </footer>
 </body>
 </html>
@@ -112,7 +110,7 @@ Ce fichier sert à lancer un petit serveur Express pour :
     ```html
     <script type="module" src="js/script.js" defer></script>
     ```
-    L’attribut `type="module"` est nécessaire lorsque vous utilisez `import` dans un fichier JavaScript (comme avec `@gradio/client`). Cela indique au navigateur qu’il s’agit d’un **module ES6**, permettant l’utilisation d’`import`/`export`.
+    L’attribut `type="module"` est nécessaire lorsque vous utilisez `import` dans un fichier JavaScript (comme avec `@gradio/client`). Cela indique au navigateur qu’il s’agit d’un **module ES6**, permettant l’utilisation d’`import`/`export`.²
 
 ```css
 body {
@@ -175,48 +173,42 @@ button {
 ```js
 import { Client } from "https://esm.sh/@gradio/client";
 
-const apiKey = "MyAccessToken"; // Remplace par ta clé Hugging Face
+const client = await Client.connect("hysts/mistral-7b", {
+  token: "YOUR_API_TOKEN" // à remplacer par votre clé API
+});
 
 async function sendMessage() {
   const userMessage = document.getElementById("userInput").value;
   if (!userMessage.trim()) return;
-
   displayMessage(userMessage, "user");
-
-  const headers = {
-    Authorization: `Bearer ${apiKey}`
-  };
-
   try {
-    const client = await Client.connect("deepseek-ai/Janus-Pro-7B", { headers });
-
-    // L'API nécessite une image, on en charge une par défaut
-    const imageResponse = await fetch("https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png");
-    const exampleImage = await imageResponse.blob();
-
-    const result = await client.predict("/multimodal_understanding", {
-      image: exampleImage,
-      question: userMessage,
-      seed: 3,
-      top_p: 0,
-      temperature: 0,
+    const result = await client.predict("/generate", {
+      message: userMessage,
+      max_new_tokens: 200,
+      temperature: 0.6,
+      top_p: 0.9,
+      top_k: 50,
+      repetition_penalty: 1.2,
     });
 
-    displayMessage(result.data[0], "bot");
+    console.log(result);
+    const botMessage = result.data[0];
+    displayMessage(botMessage, "bot");
+
   } catch (err) {
     displayMessage("Erreur de communication avec l'API.", "bot");
     console.error("Erreur API :", err);
   }
-
   document.getElementById("userInput").value = "";
 }
 
 window.sendMessage = sendMessage;
-
 function displayMessage(message, type) {
   const messagesContainer = document.getElementById("messages");
   const p = document.createElement("p");
-  p.className = type === "user" ? "user-message" : "bot-message";
+  p.className = type === "user"
+    ? "user-message"
+    : "bot-message";
   p.textContent = message;
   messagesContainer.appendChild(p);
   messagesContainer.scrollTop = messagesContainer.scrollHeight;
@@ -226,35 +218,31 @@ Dans ce code, nous voyons deux fonctions. La seconde `displayMessage()` est une 
 
 ### Comparaison avec le code proposé sur Hugging Face
 
-Lorsque vous cliquez sur "Use via API" dans le Space Janus-Pro-7B, vous voyez ce code proposé :
+Lorsque vous cliquez sur "Use via API" dans le Space hysts/mistral-7b, vous voyez ce code proposé :
 
 ```js
 import { Client } from "@gradio/client";
 
-const response_0 = await fetch("https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png");
-const exampleImage = await response_0.blob();
-
-const client = await Client.connect("deepseek-ai/Janus-Pro-7B");
-
-const result = await client.predict("/multimodal_understanding", {
-  image: exampleImage,
-  question: "Hello!",
-  seed: 3,
-  top_p: 0,
-  temperature: 0,
+const client = await Client.connect("hysts/mistral-7b");
+const result = await client.predict("/generate", {
+		message: "Hello!!",
+		max_new_tokens: 1024,
+		temperature: 0.6,
+		top_p: 0.9,
+		top_k: 50,
+		repetition_penalty: 1.2,
 });
 
 console.log(result.data);
 ```
 Notre version apporte plusieurs améliorations pratiques :
 
+- Elle utilise un paramètre supplémentaire "token" pour se connecter au modèle, cela permet de pouvoir faire plus d'inférence gratuitement.
+
 - Elle utilise un champ de saisie dynamique (pas une question codée en dur)
 
 - Elle utilise un affichage interactif de messages
 
-- Elle ajoute l’authentification via une clé API dans les en-têtes HTTP
-
-- Elle sépare le backend du frontend avec un petit serveur Express
 
 ### Résultat
 En lançant le projet avec node server.js et en accédant à http://localhost:3000, vous pourrez :
@@ -263,7 +251,7 @@ En lançant le projet avec node server.js et en accédant à http://localhost:30
 
 - voir votre message s’afficher à droite,
 
-- recevoir une réponse du modèle Janus-Pro-7B à gauche.
+- recevoir une réponse du modèle à gauche.
 
 
 

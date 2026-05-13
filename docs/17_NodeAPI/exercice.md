@@ -2,6 +2,8 @@
 
 Dans cet exercice, vous allez **réutiliser le site Mini-Blog** que vous avez construit lors des cours précédents (stockage en base de données inclus).
 
+Vous pouvez télécharger une version corrigée de cet exercice ici : [>> lien de téléchargement](../img/17_NodeAPI/ExerciceMiniBlog.zip)  
+
 Nous allons maintenant y intégrer une fonctionnalité d’intelligence artificielle : un bouton permettra de **générer automatiquement le contenu d’un article** à partir de son titre, grâce à une API de Hugging Face.
 
 
@@ -9,7 +11,7 @@ Nous allons maintenant y intégrer une fonctionnalité d’intelligence artifici
 
 Modifier le fichier `ajout.html` pour y ajouter un **bouton "Générer article"**.
 
-Lorsque l’utilisateur entre un titre d’article, il pourra cliquer sur ce bouton pour générer automatiquement un contenu, à l’aide d’un **modèle de langage** (comme `deepseek-ai/Janus-Pro-7B`).
+Lorsque l’utilisateur entre un titre d’article, il pourra cliquer sur ce bouton pour générer automatiquement un contenu, à l’aide d’un **modèle de langage** (comme `hysts/mistral-7b`).
 
 Le contenu généré s’affichera automatiquement dans le champ `<textarea>` prévu pour le corps de l’article.
 
@@ -41,7 +43,7 @@ Je veux que tu écrives un article sur : [titre fourni par l'utilisateur]
 
 ### Conseils
 
-- Vous pouvez réutiliser le même modèle que dans l’exemple du chatbot (deepseek-ai/Janus-Pro-7B) et la même image d’exemple si nécessaire.
+- Vous pouvez réutiliser le même modèle que dans l’exemple du chatbot.
 
 - La génération doit se faire en JavaScript frontend, avec @gradio/client et un import via un CDN (comme https://esm.sh).
 
