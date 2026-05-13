@@ -510,7 +510,7 @@
           
   
   
-  NodeJS-BD
+  NodeJS-BD (BONUS)
 
         </a>
       </li>
@@ -3161,7 +3161,7 @@
   
   
   <span class="md-ellipsis">
-    NodeJS-BD
+    NodeJS-BD (BONUS)
     
   </span>
   
@@ -3172,7 +3172,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
-            NodeJS-BD
+            NodeJS-BD (BONUS)
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -3445,6 +3445,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../ajax/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AJAX
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../apiSimple/" class="md-nav__link">
         
   
@@ -3697,10 +3720,11 @@
 
 <h1 id="5-exercice-generation-automatique-du-contenu-dun-article">5 – Exercice : Génération automatique du contenu d’un article</h1>
 <p>Dans cet exercice, vous allez <strong>réutiliser le site Mini-Blog</strong> que vous avez construit lors des cours précédents (stockage en base de données inclus).</p>
+<p>Vous pouvez télécharger une version corrigée de cet exercice ici : <a href="../../img/17_NodeAPI/ExerciceMiniBlog.zip">&gt;&gt; lien de téléchargement</a>  </p>
 <p>Nous allons maintenant y intégrer une fonctionnalité d’intelligence artificielle : un bouton permettra de <strong>générer automatiquement le contenu d’un article</strong> à partir de son titre, grâce à une API de Hugging Face.</p>
 <h3 id="objectif">Objectif</h3>
 <p>Modifier le fichier <code>ajout.html</code> pour y ajouter un <strong>bouton "Générer article"</strong>.</p>
-<p>Lorsque l’utilisateur entre un titre d’article, il pourra cliquer sur ce bouton pour générer automatiquement un contenu, à l’aide d’un <strong>modèle de langage</strong> (comme <code>deepseek-ai/Janus-Pro-7B</code>).</p>
+<p>Lorsque l’utilisateur entre un titre d’article, il pourra cliquer sur ce bouton pour générer automatiquement un contenu, à l’aide d’un <strong>modèle de langage</strong> (comme <code>hysts/mistral-7b</code>).</p>
 <p>Le contenu généré s’affichera automatiquement dans le champ <code>&lt;textarea&gt;</code> prévu pour le corps de l’article.</p>
 <p>Si l'utilisateur essaie d'appuyer sur le bouton permettant de générer l'article sans avoir mis de titre, un message s'affiche dans la zone de contenu "Veuillez d'abord remplir un titre".</p>
 <h3 id="fichiers-a-modifier">Fichiers à modifier</h3>
@@ -3733,7 +3757,7 @@
 <h3 id="conseils">Conseils</h3>
 <ul>
 <li>
-<p>Vous pouvez réutiliser le même modèle que dans l’exemple du chatbot (deepseek-ai/Janus-Pro-7B) et la même image d’exemple si nécessaire.</p>
+<p>Vous pouvez réutiliser le même modèle que dans l’exemple du chatbot.</p>
 </li>
 <li>
 <p>La génération doit se faire en JavaScript frontend, avec @gradio/client et un import via un CDN (comme https://esm.sh).</p>
