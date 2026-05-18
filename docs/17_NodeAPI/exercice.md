@@ -2,7 +2,7 @@
 
 Dans cet exercice, vous allez **réutiliser le site Mini-Blog** que vous avez construit lors des cours précédents (stockage en base de données inclus).
 
-Vous pouvez télécharger une version corrigée de cet exercice ici : [>> lien de téléchargement](../img/17_NodeAPI/ExerciceMiniBlog.zip)  
+Vous pouvez télécharger une version corrigée de cet exercice ici : [>> lien de téléchargement](../img/17_NodeAPI/Stub_ExerciceMiniBlog.zip)  
 
 Nous allons maintenant y intégrer une fonctionnalité d’intelligence artificielle : un bouton permettra de **générer automatiquement le contenu d’un article** à partir de son titre, grâce à une API de Hugging Face.
 
